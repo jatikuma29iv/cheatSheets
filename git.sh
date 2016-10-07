@@ -30,3 +30,5 @@
                                                          
   #grep exclue dir                                
     grep –exclude-dir=\.git -rn “foo” .
+
+_CreateNewNuGetPackage/DoNotModify/NuGet.exe push Release/TechJini.TransformDocument.0.0.1.nupkg -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGguto
