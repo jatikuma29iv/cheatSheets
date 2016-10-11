@@ -4,7 +4,7 @@ gT            go to previous tab                                [c :        - pr
 {i}gt         go to tab in position i                           do          - diff obtain                               cmd+shit+4                      block to file
                                                                 dp          - diff put                                  cmd+shit+ctrl+4                 block to clicpboard
 :tabs         list all tabs including their displayed windows   zo          - open folded text                          cmd+shit+4 then spacebar        current window to file
-:tabm 0       move current tab to first                         zc          - close folded text                         cmd+shit+ctrl+4 then spacebar   current window to clipboard
+:tabm 0       move current tab to first                         zc          - close folded text                         cmd+shit+ctrl+4 then spacebar   current window to clipboard                          :set fdm=[manual|indent|syntax]          zf     - to fold
 :tabm         move current tab to last                          :diffupdate - re-scan the files for differences           
 :tabm {i}     move current tab to position i+1                                                                               
                                                                 #open files in tabs                                          
