@@ -34,3 +34,5 @@ sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist
 #Stop FTP server
 sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist
 
+#Visual Studio
+install-package –IncludePrerelease ina.webapi -v 1.0.0-beta

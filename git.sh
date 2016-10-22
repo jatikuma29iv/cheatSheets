@@ -31,4 +31,24 @@
   #grep exclue dir                                
     grep –exclude-dir=\.git -rn “foo” .
 
-_CreateNewNuGetPackage/DoNotModify/NuGet.exe push Release/TechJini.TransformDocument.0.0.1.nupkg -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGguto
+#global defaults
+git config --global diff.tool vimdiff
+git config --global difftool.prompt false
+git config --global alias.d difftool
+
+#Nuget Push
+-s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGguto
+
+#tagging
+  # add tag with comment/annotation                   #push all tags
+  git tag -a v1.2.0 -m "add comment"                  git push --tags
+  
+  #tagging later                                      #push single tags
+  git log --pretty=oneline // and get hash#           git push origin <tag_name>
+  git tag -a v1.2.0 9fceb02
+  
+  #list tag
+  git tag
+  git tag -l "v1.0.*"
+
+./Ina.WebApi/_CreateNewNuGetPackage/DoNotModify/NuGet.exe locals all -clear && ./Ina.WebApi/_CreateNewNuGetPackage/DoNotModify/NuGet.exe push ./Ina.WebApi/bin/Ina.WebApi.1.0.0-beta.Release.AnyCPU.nupkg -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGguto && ./Ina.WebApi/_CreateNewNuGetPackage/DoNotModify/NuGet.exe push ./Ina.WebApi/bin/Ina.WebApi.1.0.0-beta.Debug.AnyCPU.nupkg -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGguto
