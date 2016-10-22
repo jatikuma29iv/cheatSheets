@@ -1,3 +1,7 @@
+# Jatin Kumar Copyright (C) 2016 - All Rights Reserved. See the LICENSE
+# file at the top-level directory of this distribution 
+# Author: Jatin Kumar <jatinkr@gmail.com>
+
 #angular
 #npm setup
   npm upgrade -g npm

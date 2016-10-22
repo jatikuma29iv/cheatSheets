@@ -1,3 +1,7 @@
+# Jatin Kumar Copyright (C) 2016 - All Rights Reserved. See the LICENSE
+# file at the top-level directory of this distribution 
+# Author: Jatin Kumar <jatinkr@gmail.com>
+
 #Resize                                         #Text Alignment                        
 Resize larger horizontally    ⌘ + Ctrl + B      Left align          ⌘ + Shift + L      
 Resize larger vertically      ⌘ + Ctrl + I      Right align         ⌘ + Shift + R      

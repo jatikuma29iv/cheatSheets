@@ -1,4 +1,8 @@
-#log with details                                                         #if you want to revert changes made 
+# Jatin Kumar Copyright (C) 2016 - All Rights Reserved. See the LICENSE
+# file at the top-level directory of this distribution 
+# Author: Jatin Kumar <jatinkr@gmail.com>
+
+ #log with details                                                         #if you want to revert changes made 
 #add '-p'                      #log with only filenames                   #to your working copy, do this:
   git log -p                     git log --name-status                      git checkout .
                                                                           

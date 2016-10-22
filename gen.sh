@@ -1,3 +1,7 @@
+# Jatin Kumar Copyright (C) 2016 - All Rights Reserved. See the LICENSE
+# file at the top-level directory of this distribution 
+# Author: Jatin Kumar <jatinkr@gmail.com>
+
 #Tab navigation                                                 #vimdiff commands                                     #MAC Screenshot
 gt            go to next tab                                    ]c :        - next difference                           cmd+shit+3                      screen to file
 gT            go to previous tab                                [c :        - previous difference                       cmd+shit+ctrl+3                 screen to clipboard
