@@ -35,11 +35,12 @@
   #grep exclue dir                                
     grep –exclude-dir=\.git -rn “foo” .
 
-#global defaults
-git config --global diff.tool vimdiff
+#global defaults                                                          #delete local branch
+git config --global diff.tool vimdiff                                     git branch -d <branchname>
 git config --global difftool.prompt false
-git config --global alias.d difftool
-
+git config --global alias.d difftool                                      #delete remote branch
+                                                                          git push origin --delete <branchname>
+                                                                          git push origin :<branchname>
 #Nuget Push
 -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGguto
 
@@ -55,4 +56,17 @@ git config --global alias.d difftool
   git tag
   git tag -l "v1.0.*"
 
-./Ina.WebApi/_CreateNewNuGetPackage/DoNotModify/NuGet.exe locals all -clear && ./Ina.WebApi/_CreateNewNuGetPackage/DoNotModify/NuGet.exe push ./Ina.WebApi/bin/Ina.WebApi.1.0.0-beta.Release.AnyCPU.nupkg -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGguto && ./Ina.WebApi/_CreateNewNuGetPackage/DoNotModify/NuGet.exe push ./Ina.WebApi/bin/Ina.WebApi.1.0.0-beta.Debug.AnyCPU.nupkg -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGguto
+blueprint-directive-menubar> git init
+blueprint-directive-menubar> git remote add ssh://git@techjini.repositoryhosting.com/techjini/blueprint-directive-menubar.git
+Edit .gitignore
+/node_modules
+/.tmp
+/.sass-cache
+/bower_components
+/.tmp
+*.sw?
+[note: do not add dist folder to .gitignore]
+
+blueprint-directive-menubar> git add .
+blueprint-directive-menubar> git commit -a
+blueprint-directive-menubar> git push -u origin master

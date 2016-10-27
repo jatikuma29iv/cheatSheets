@@ -40,3 +40,15 @@ sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist
 
 #Visual Studio
 install-package –IncludePrerelease ina.webapi -v 1.0.0-beta
+
+Sync With Active Document
+Ctrl+[, S
+Ctrl+[, Ctrl+S
+
+./Ina.Logger/_CreateNewNuGetPackage/DoNotModify/NuGet.exe locals all -clear && \
+    ./Ina.Logger/_CreateNewNuGetPackage/DoNotModify/NuGet.exe push ./Ina.Logger/bin/Debug/Ina.Logger.1.0.0-gamma.Debug.AnyCPU.nupkg -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGguto && \
+    ./Ina.Logger/_CreateNewNuGetPackage/DoNotModify/NuGet.exe push ./Ina.Logger/bin/Release/Ina.Logger.1.0.0-gamma.Release.AnyCPU.nupkg -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGgut
+
+./Ina.WebApi/_CreateNewNuGetPackage/DoNotModify/NuGet.exe locals all -clear && \
+    ./Ina.WebApi/_CreateNewNuGetPackage/DoNotModify/NuGet.exe push ./Ina.WebApi/bin/Ina.WebApi.1.0.0-gamma.Debug.AnyCPU.nupkg -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGguto && \
+    ./Ina.Logger/_CreateNewNuGetPackage/DoNotModify/NuGet.exe push ./Ina.Logger/bin/Ina.WebApi.1.0.0-gamma.Release.AnyCPU.nupkg -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGgut
