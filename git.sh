@@ -35,9 +35,9 @@
   #grep exclue dir                                
     grep –exclude-dir=\.git -rn “foo” .
 
-#global defaults                                                          #delete local branch
-git config --global diff.tool vimdiff                                     git branch -d <branchname>
-git config --global difftool.prompt false
+#global defaults                                                          #delete local branch                        #delte tags
+git config --global diff.tool vimdiff                                     git branch -d <branchname>                  git tag -d 12345
+git config --global difftool.prompt false                                                                             git push origin :refs/tags/12345
 git config --global alias.d difftool                                      #delete remote branch
                                                                           git push origin --delete <branchname>
                                                                           git push origin :<branchname>
