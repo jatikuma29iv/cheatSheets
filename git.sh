@@ -56,6 +56,38 @@ git config --global alias.d difftool                                      #delet
   git tag
   git tag -l "v1.0.*"
 
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+| MIGRATING A DIRECTORY INTO A NEW REPOSITORY WITH HISTORY                                                            |
+                                                                                                                       
+| CONSTRAINTS                                                                                                         |
+  - - - - - -                                                                                                          
+| * Git repo A contains other directories that we don’t want to move.                                                 |
+  * We’d like to perserve the Git commit history for the directory we are moving.                                      
+|                                                                                                                     |
+  FILTER BRANCH THE SUBDIRECTORY                              |                                                        
+| cd to root folder of your repository and                                                                            |
+  issue the follow commands:                                  |                                                        
+|                                                                                                                     |
+  $ git filter-branch --subdirectory-filter <dir 1> -- --all  | $ git clone repository B                               
+| $ git reset --hard                                            $ cd repository B                                     |
+  $ git gc --aggressive                                       | $ git remote add repo-A-branch <git rep A dir>         
+| $ git prune                                                   $ git pull repo-A-branch master                       |
+                                                              | $ git remote rm repo-A-branch                          
+| $ git clone repository B                                      $ git remote add origin git <repo-A-branch-git-path>  |
+  $ cd repository B                                           |                                                        
+| $ git remote add repo-A-branch <git rep A dir>                this creates new branch in repository B               |
+  $ git pull repo-A-branch master                             | on merging repo B branch with repo A 'refusing to      
+| $ git remote rm repo-A-branch                                 merge unrelated histories' will occur                 |
+  $ git remote add origin git <repo-A-branch-git-path>        | use                                                    
+|                                                                 $ git merge --allow-unrelated-histories             |
+  this creates new branch in repository B                     | to merge repo-B branch to repa-A                       
+| on merging repo B branch with repo A 'refusing to                                                                   |
+  merge unrelated histories' will occur                       |                                                        
+| use                                                                                                                 |
+    $ git merge --allow-unrelated-histories                   |                                                        
+| to merge repo-B branch to repa-A                                                                                    |
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 blueprint-directive-menubar> git init
 blueprint-directive-menubar> git remote add ssh://git@techjini.repositoryhosting.com/techjini/blueprint-directive-menubar.git
 Edit .gitignore
