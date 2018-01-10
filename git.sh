@@ -2,7 +2,7 @@
 # file at the top-level directory of this distribution 
 # Author: Jatin Kumar <jatinkr@gmail.com>
 
- #log with details                                                         #if you want to revert changes made 
+#log with details                                                         #if you want to revert changes made 
 #add '-p'                      #log with only filenames                   #to your working copy, do this:
   git log -p                     git log --name-status                      git checkout .
                                                                           
@@ -29,9 +29,10 @@
   #git merge                                      
   :diffg LO      :diffg RE | diffu                                        #create zip/tar
                                                                             git archive mergeSushmaDBChanges2Develep --format=zip --output=../test.zip
-  #ignore folder                                  
-    git diff ver -- ':!path/to/ignore' 
-                                                         
+  #ignore folder           								#submodules
+    git diff ver -- ':!path/to/ignore' 					git clone git://github.com/foo/bar.git
+                                                        cd bar
+														git submodule update --init [--recursive | libs/hoge ]
   #grep exclue dir                                
     grep –exclude-dir=\.git -rn “foo” .
 
@@ -41,6 +42,10 @@ git config --global difftool.prompt false                                       
 git config --global alias.d difftool                                      #delete remote branch
                                                                           git push origin --delete <branchname>
                                                                           git push origin :<branchname>
+git config merge.tool vimdiff
+git config merge.conflictstyle diff3
+git config mergetool.prompt false
+
 #Nuget Push
 -s https://bluestage.petrofac.com:443/nuget/ sbstgnhnXsgGguto
 
@@ -67,26 +72,38 @@ git config --global alias.d difftool                                      #delet
   FILTER BRANCH THE SUBDIRECTORY                              |                                                        
 | cd to root folder of your repository and                                                                            |
   issue the follow commands:                                  |                                                        
-|                                                                                                                     |
-  $ git filter-branch --subdirectory-filter <dir 1> -- --all  | $ git clone repository B                               
-| $ git reset --hard                                            $ cd repository B                                     |
-  $ git gc --aggressive                                       | $ git remote add repo-A-branch <git rep A dir>         
-| $ git prune                                                   $ git pull repo-A-branch master                       |
-                                                              | $ git remote rm repo-A-branch                          
-| $ git clone repository B                                      $ git remote add origin git <repo-A-branch-git-path>  |
-  $ cd repository B                                           |                                                        
-| $ git remote add repo-A-branch <git rep A dir>                this creates new branch in repository B               |
-  $ git pull repo-A-branch master                             | on merging repo B branch with repo A 'refusing to      
-| $ git remote rm repo-A-branch                                 merge unrelated histories' will occur                 |
-  $ git remote add origin git <repo-A-branch-git-path>        | use                                                    
-|                                                                 $ git merge --allow-unrelated-histories             |
+|   git remote rm origin                                                                                              |
+    git filter-branch --subdirectory-filter <dir 1> -- --all  |   git clone repository B                               
+|   git reset --hard                                              cd repository B                                     |
+    git gc --aggressive                                       |   git remote add repo-A-branch <git rep A dir>         
+|   git prune                                                     git pull repo-A-branch master                       |
+                                                              |   git remote rm repo-A-branch                          
+|   git clone repository B                                        git remote add origin git <repo-A-branch-git-path>  |
+    cd repository B                                           |                                                        
+|   git remote add repo-A-branch <git rep A dir>                this creates new branch in repository B               |
+    git pull repo-A-branch master                             | on merging repo B branch with repo A 'refusing to      
+|   git remote rm repo-A-branch                                 merge unrelated histories' will occur                 |
+    git remote add origin git <repo-A-branch-git-path>        | use                                                    
+|                                                                   git merge --allow-unrelated-histories             |
   this creates new branch in repository B                     | to merge repo-B branch to repa-A                       
 | on merging repo B branch with repo A 'refusing to                                                                   |
   merge unrelated histories' will occur                       |                                                        
 | use                                                                                                                 |
-    $ git merge --allow-unrelated-histories                   |                                                        
+      git merge --allow-unrelated-histories                   |                                                        
 | to merge repo-B branch to repa-A                                                                                    |
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# How to create and apply a patch with Git
+# https://ariejan.net/2009/10/26/how-to-create-and-apply-a-patch-with-git/
+  git format-patch master --stdout > fix_empty_poster.patch
+  git apply --stat fix_empty_poster.patch // to see patch status
+  git apply --check fix_empty_poster.patch // to test the patch
+  git am --signoff < fix_empty_poster.patch // apply the patch
+  
+# Three way compare manually
+  git show <commit/branch/ref>:<file/path> > <outputfile>
+  
+  export LOCAL="PetroceptDc/PetroceptDc.WebApi/App_Start/WebApiConfig.cs" && git show e805ddc:"$LOCAL" > REMOTE && git show 821dc38:"$LOCAL" > BASE &&  diff3 "$LOCAL" BASE REMOTE -m | sed 's/^M$//' > OUT && vim -d -c "wincmd J" OUT "$LOCAL" BASE REMOTE -c 'set diffopt+=iwhite'
 
 blueprint-directive-menubar> git init
 blueprint-directive-menubar> git remote add ssh://git@techjini.repositoryhosting.com/techjini/blueprint-directive-menubar.git

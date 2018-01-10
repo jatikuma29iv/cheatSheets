@@ -3,10 +3,14 @@
 # Author: Jatin Kumar <jatinkr@gmail.com>
 
 #SQL                                                 
-#List all Databases                                  #list table, run stored procedure
-  exec sp_databases                                    sp_help
-  go                                                   go
-                                                     
+#List all Databases                 #list table, run stored procedure
+  exec sp_databases                   sp_help
+  go                                  go
+  
+#list column details 
+select column_name,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH from information_schema.columns where table_name = 'LoggerMaster' order by ordinal_position
+or exec sp_columns <tableName>;go
+  
 #List all tables                                     #List of stored procedures:
  use DatabaseNameBlahBlahBlah                         use DatabaseNameBlahBlahBlah
  select name from sysobjects where type = 'U'         select name from sysobjects where type = 'P'
@@ -15,8 +19,8 @@
 #Login                                               #For Mac OSX
  sqlcmd -U sa -P root -S localhost                    tsql instead of sqlcmd
 
-#Run an SQL script
- sqlcmd -U username -S server\instance -e -i script.sql
+#Run an SQL script                                           #Run Query and exit
+ sqlcmd -U username -S server\instance -e -i script.sql      sqlcmd -S server\instance -Q "cmd" -o "outputfile"
 
 #Select a DB
   use dbname
@@ -40,7 +44,7 @@
   GO
 
 #Change column type
- ALTER TABLE your_table ALTER COLUMN your_column varchar(20)
+ ALTER TABLE your_table   your_column varchar(20)
 
 #Change column name
  sp_RENAME 'your_table.old_column', 'new_column', 'COLUMN'
