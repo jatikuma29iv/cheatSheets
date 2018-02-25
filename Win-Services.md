@@ -2,7 +2,8 @@
 
 ## Create
 ```cmd
-sc create "new_svc_name" binPath= "path\of\new_svc\executable"
+sc create "new_svc_name" binPath= "path\of\new_svc\executable" DisplayName="svc name" 
+start=auto
 ```
 
 ## Start
