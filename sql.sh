@@ -11,10 +11,27 @@
 select column_name,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH from information_schema.columns where table_name = 'LoggerMaster' order by ordinal_position
 or exec sp_columns <tableName>;go
   
+#List all Table, Stored Procedure, View or Function
+  SELECT schema_Name(schema_id)  as  SchemaName,
+    [name],              --  Name of the Table, Stored Procedure or Function
+    [type]               --  'V' for Views, 'U' for Table, 'P' for Stored Procedure, 'FN' for function
+    FROM sys.objects 
+    WHERE [type_desc] IN ( 'USER_TABLE', 'SQL_STORED_PROCEDURE', 'VIEW', 'SQL_SCALAR_FUNCTION')
+    AND [name] NOT LIKE 'sp_%'
+    AND [name] NOT LIKE 'fn_%'
+    ORDER BY 3 DESC,        --  type first
+    1 ASC,          --  then schema
+    2 ASC           --  then function/table name
+
 #List all tables                                     #List of stored procedures:
  use DatabaseNameBlahBlahBlah                         use DatabaseNameBlahBlahBlah
  select name from sysobjects where type = 'U'         select name from sysobjects where type = 'P'
  go                                                   go
+
+#List SP content
+EXEC sp_helptext N'AdventureWorks2012.dbo.uspLogError';  
+or
+SELECT OBJECT_DEFINITION (OBJECT_ID(N'AdventureWorks2012.dbo.uspLogError'));  
 
 #Login                                               #For Mac OSX
  sqlcmd -U sa -P root -S localhost                    tsql instead of sqlcmd
