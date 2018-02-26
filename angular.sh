@@ -26,3 +26,8 @@
   mkdir project && cd $_
   yo angular
 
+#Basics
+
+Factory    - is a function which returns a type or function, can access services,do service initializations, lazy initializations  
+Provider   - must implement $get, which is a factory
+Service    - takes a type and creates a new object of the given type, but instanciation happens once
