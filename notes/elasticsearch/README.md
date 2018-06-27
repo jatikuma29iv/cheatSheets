@@ -63,6 +63,10 @@ POST /customer/doc/1/_update?pretty
 }
 ```
 
+** Delete index **
+```rest
+$ curl -XDELETE 'http://localhost:9200/twitter/'
+```
 
 ## Kibana
 
@@ -270,6 +274,15 @@ New-NetFirewallRule -DisplayName "Kibana (5601)" -Name "Kibana (5601)" -Profile 
 
 ### Parsing Json
     [Best way to parse json input?](https://discuss.elastic.co/t/best-way-to-parse-json-input/29809)
+
+### Replacing @timestamp with timestamp of my log
+
+We wanted to do the same thing, plus we use a slightly non-standard timestamp syntax.
+Here's what works for us in our indexer:
+```
+grok { match = { "message" => "^(?\d{4}-\d{2}-\d{2}@\d{2}:\d{2}:\d{2}(.\d{1,4})?)OTHERSTUFF" } }
+date { match => [ "logtimestamp", "yyyy-MM-dd@HH:mm:ss.SSS" ] }
+```
 
 ## Beats
 
