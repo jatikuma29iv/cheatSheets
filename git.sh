@@ -2,6 +2,15 @@
 # file at the top-level directory of this distribution 
 # Author: Jatin Kumar <jatinkr@gmail.com>
 
+
+# checking in changes
+  git add .                        # to select files for checkin
+  git commit -m 'write you comment here'
+  git push                         # if branch is already pushed
+  #else
+  git push -u origin <branchname>  #if branch is newly created
+
+
 #log with details                                                         #if you want to revert changes made 
 #add '-p'                      #log with only filenames                   #to your working copy, do this:
   git log -p                     git log --name-status                      git checkout .
