@@ -27,12 +27,30 @@
    git diff --stat                                                        #get all updated from parent branch
                                                                             git rebase <branch>
   #git merge                                      
+    #suppose you want to merge your branch `xyz`
+    # to master
+      # commit your code to your branch
+      git checkout master              #step 1
+      git merge xyz                    #step 2
+
+  #removing conflicts
+  git mergeool
+
   :diffg LO      :diffg RE | diffu                                        #create zip/tar
                                                                             git archive mergeSushmaDBChanges2Develep --format=zip --output=../test.zip
-  #ignore folder           								#submodules
+  #ignore folder           								
     git diff ver -- ':!path/to/ignore' 					git clone git://github.com/foo/bar.git
                                                         cd bar
-														git submodule update --init [--recursive | libs/hoge ]
+  #submodules
+    # for fresh clone
+    git submodule update --init [--recursive | libs/hoge ]
+
+    # for checking out correct versions in submodule
+    git submodule update
+
+    #
+    git submodule foreach git checkout [branch]
+
   #grep exclue dir                                
     grep –exclude-dir=\.git -rn “foo” .
 

@@ -66,3 +66,5 @@ SELECT OBJECT_DEFINITION (OBJECT_ID(N'AdventureWorks2012.dbo.uspLogError'));
 #Change column name
  sp_RENAME 'your_table.old_column', 'new_column', 'COLUMN'
 
+# installing sql*plus in mac
+https://tomeuwork.wordpress.com/2014/05/12/how-to-install-oracle-sqlplus-and-oracle-client-in-mac-os/
