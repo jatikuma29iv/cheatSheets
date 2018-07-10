@@ -1,0 +1,1535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1038.36">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Courier New'}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Courier New'; color: #0000ee}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000ee}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Times; color: #008000}
+    p.p10 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p11 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times}
+    p.p12 {margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times}
+    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px Verdana}
+    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Helvetica}
+    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    span.s1 {font: 12.0px Monaco}
+    span.s2 {text-decoration: underline}
+    span.s3 {font: 12.0px Times; text-decoration: underline}
+    span.s4 {font: 12.0px 'Lucida Grande'}
+    span.s5 {font: 12.0px Courier}
+    span.s6 {text-decoration: underline ; color: #0000ee}
+    table.t1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080}
+    td.td1 {width: 279.0px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {width: 75.0px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td3 {width: 60.0px; background-color: #add8e6; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td4 {width: 693.0px; background-color: #add8e6; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td5 {width: 60.0px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td6 {width: 693.0px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td7 {width: 174.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td8 {width: 47.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td9 {width: 79.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td10 {width: 254.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td11 {width: 172.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td12 {width: 84.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td13 {width: 85.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td14 {width: 130.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td15 {width: 33.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td16 {width: 136.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td17 {width: 236.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td18 {width: 129.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td19 {width: 15.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td20 {width: 91.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td21 {width: 215.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td22 {width: 18.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td23 {width: 224.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td24 {width: 96.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td25 {width: 88.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td26 {width: 121.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td27 {width: 153.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td28 {width: 77.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td29 {width: 142.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td30 {width: 44.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td31 {width: 31.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    ol.ol1 {list-style-type: decimal}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="Apple-converted-space">        </span>svn</p>
+<p class="p1"><span class="Apple-converted-space">        </span>jatinkumar</p>
+<p class="p1"><span class="Apple-converted-space">        </span>OA4QqVklue37rHn</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p3"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4">demo</p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p4">112.78.116.170</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4">Artl live (http://artl.comix.zero-sum.mobi/)</p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p4">124.153.106.57</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4">Vodafone live (http://vdfn.comix.zero-sum.mobi/)</p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p4">124.153.106.47</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4">Vodafone approval (http://vdfn.comix-apr.zero-sum.mobi/)</p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p4">124.153.106.48</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><br></p>
+<p class="p5">sudo /usr/sbin/tcpdump -w out -i eth1 -s 1600 -X port 80 <span class="s1"><br>
+</span>sudo sh -c 'grep 125.20 /var/log/httpd/*' | sed -e 's/.*125/125/;' | cut "-d " -f 1 | sort | uniq -c <span class="s1"><br>
+</span>grep a4.3.0 /usr/local/jboss/server/default/log/server.log.2010-09-1* | sed 's/\(:.*$\).*//' | sort | uniq | xargs -n 1 -I {} cp {} . <span class="s1"><br>
+</span>:%s/\(\(^.*\)^I.\+\)\@&lt;=,/^M\2^I/g <span class="s1"><br>
+</span>cat /dev/urandom | tr -c -d '[:print:]'<span class="Apple-converted-space"> </span></p>
+<p class="p3"><br></p>
+<p class="p5">commit to: 124.153.106.57:/var/www/artl</p>
+<p class="p5">cd ~</p>
+<p class="p5">rsync -avz -e ssh Wap-6.0/* jatin@124.153.106.57:/var/www/artl</p>
+<p class="p3"><br></p>
+<p class="p4">Web Mail Server</p>
+<p class="p6"><span class="s2"><a href="http://webmail.zero-sum.co.in/Main/frmMessagesAdv.aspx?user=jatinkumar&amp;folder=inbox&amp;mapped=false&amp;leftnav=true">http://webmail.zero-sum.co.in/Main/frmMessagesAdv.aspx?user=jatinkumar&amp;folder=inbox&amp;mapped=false&amp;leftnav=true</a></span></p>
+<p class="p3"><br></p>
+<p class="p5">mail server</p>
+<p class="p5">incoming/outgoing- mail.zero-sum.co.in</p>
+<p class="p3"><br></p>
+<p class="p5">wap SVN</p>
+<p class="p7"><span class="s2"><a href="http://219.94.191.229/var/svn/Crater/branches/ComicViewer/branches/Wap-6.0">http://219.94.191.229/var/svn/Crater/branches/ComicViewer/branches/Wap-6.0<span class="s3"></span></a></span></p>
+<p class="p3"><br></p>
+<p class="p5">dns server</p>
+<p class="p5">125.22.47.125</p>
+<p class="p3"><br></p>
+<p class="p4">Custom header from linux</p>
+<p class="p5">wget -O hoge --header "User-Agent: Nokia6210/MIDP-2.1/CLDC-1.1" --header "Screen-Size: 240/320" --header "Viewer-Version: 4.3.0" --header "X-MSISDN: 919986011905" --header 'X-Forwarded-For: 203.88.8.2' 'http://124.153.106.47/hcs/site/Archie/getbooklist.php?key=3&amp;rev=1&amp;flt=0&amp;off=0&amp;cnt=200'</p>
+<p class="p3"><br></p>
+<p class="p4">link to ftp server</p>
+<p class="p4">lftp -u ftpGPP0017,459df=a=sh 202.229.42.160</p>
+<p class="p3"><br></p>
+<p class="p4"><span class="s2"><b>bash Shell Shortcuts</b></span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>Tab . <span class="Apple-converted-space">        </span>: Autocompletes from the cursor position.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+-<span class="Apple-converted-space">        </span>: Undo last command</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+_<span class="Apple-converted-space">        </span>: Undo last command</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+a<span class="Apple-converted-space">        </span>: moves the cursor to the line start (equivalent to the key Home).</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+e<span class="Apple-converted-space">        </span>: (end) moves the cursor to the line end (equivalent to the key End).</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+p<span class="Apple-converted-space">        </span>: (previous) recalls the prior command (equivalent to the key .).</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+n<span class="Apple-converted-space">        </span>: (next) recalls the next command (equivalent to the key .).</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+r<span class="Apple-converted-space">        </span>: (research) recalls the last command including the specified character(s). A second Ctrl+r recalls the next anterior command which corresponds to the research</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+s<span class="Apple-converted-space">        </span>: Go back to the next more recent command of the research (beware to not execute it from a terminal because this command also launches its XOFF). If you changed that XOFF setting, use Ctrl+q to return.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+o<span class="Apple-converted-space">        </span>: executes the found command from research.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+l<span class="Apple-converted-space">        </span>: clears the screen content (equivalent to the command clear).</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+u<span class="Apple-converted-space">        </span>: clears the line content before the cursor and copies it into the clipboard.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+k<span class="Apple-converted-space">        </span>: clears the line content after the cursor and copies it into the clipboard.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+w<span class="Apple-converted-space">        </span>: clears the word before the cursor and copies it into the clipboard.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+y<span class="Apple-converted-space">        </span>: (yank) adds the clipboard content from the cursor position.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+d<span class="Apple-converted-space">        </span>: sends an EOF marker, which (unless disabled by an option) closes the current shell (equivalent to the command exit). (Only if there is no text on the current line)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+c<span class="Apple-converted-space">        </span>: sends the signal SIGINT to the current task, which aborts and closes it.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+z<span class="Apple-converted-space">        </span>: sends the signal SIGTSTP to the current task, which suspends it. To return to it later one can enter fg ['process name or job id'] (foreground).</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+x Ctrl+x : (because x has a crossing shape) alternates the cursor with its old position.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+x Ctrl+e : edits the current line in the $EDITOR program, or vi if undefined.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+f<span class="Apple-converted-space">        </span>: (forward) moves forward the cursor of one letter.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Alt+f <span class="Apple-converted-space">        </span>: (forward) moves forward the cursor of one word.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+b<span class="Apple-converted-space">        </span>: (backward) moves backward the cursor of one letter.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Alt+b <span class="Apple-converted-space">        </span>: (backward) moves backward the cursor of one word.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Alt+Del <span class="Apple-converted-space">      </span>: cuts the word before the cursor.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Alt+d <span class="Apple-converted-space">        </span>: cuts the word after the cursor.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Alt+u <span class="Apple-converted-space">        </span>: capitalizes every character from the cursor's position to the end of the current word.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Alt+l <span class="Apple-converted-space">        </span>: lowers the case of every character from the cursor's position to the end of the current word.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Alt+c <span class="Apple-converted-space">        </span>: capitalizes the character under the cursor and moves to the end of the word.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Alt+r <span class="Apple-converted-space">        </span>: cancels the changes and put back the line as it was in the history</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+Alt+m<span class="Apple-converted-space">    </span>: switch from emac to vi mode</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Ctrl+e<span class="Apple-converted-space">        </span>: switch from vi to emac mode</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>Here "2T" means Press TAB twice</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>$ 2T - All available commands(common)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>$ (string)2T - All available commands starting with (string)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>$ /2T - Entire directory structure including Hidden one</p>
+<p class="p1"><span class="Apple-converted-space">    </span>$ 2T - Only Sub Dirs inside including Hidden one</p>
+<p class="p1"><span class="Apple-converted-space">    </span>$ *2T - Only Sub Dirs inside without Hidden one<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>$ ~2T - All Present Users on system from "/etc/passwd"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>$ $2T - All Sys variables</p>
+<p class="p1"><span class="Apple-converted-space">    </span>$ @2T - Entries from "/etc/hosts"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>$ =2T - Output like ls or dir</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times"><b>Vim tips</b></h1>
+<p class="p1">gg or 1G (begin of file)</p>
+<p class="p1"><span class="Apple-converted-space">                           </span>^u page up<span class="Apple-converted-space">                           </span></p>
+<p class="p1"><span class="Apple-converted-space">                           </span>{<span class="Apple-converted-space">  </span>half pg up</p>
+<p class="p1"><span class="Apple-converted-space">                           </span>k<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>^<span class="Apple-converted-space">      </span>b<span class="Apple-converted-space">      </span>h<span class="Apple-converted-space">      </span>l<span class="Apple-converted-space">    </span>w e <span class="Apple-converted-space">  </span>$</p>
+<p class="p1">Shell <span class="Apple-converted-space">    </span>^a <span class="Apple-converted-space">  </span>alt+b <span class="Apple-converted-space">  </span>^b<span class="Apple-converted-space">      </span>^f<span class="Apple-converted-space">  </span>alt+f<span class="Apple-converted-space">  </span>^e</p>
+<p class="p1">Shl Jump<span class="Apple-converted-space">    </span>alt+Ctrl+]x<span class="Apple-converted-space">          </span>^]x to x<span class="Apple-converted-space"> </span></p>
+<p class="p1">DEL<span class="Apple-converted-space">    </span>^u&lt;-- <span class="Apple-converted-space">    </span>^w<span class="Apple-converted-space">    </span>^h<span class="Apple-converted-space">      </span>^d<span class="Apple-converted-space">  </span>alt+d<span class="Apple-converted-space">  </span>--&gt;^k</p>
+<p class="p1"><span class="Apple-converted-space">                           </span>j</p>
+<p class="p1"><span class="Apple-converted-space">                           </span>} half pg dn</p>
+<p class="p1"><span class="Apple-converted-space">                           </span>^d page dn<span class="Apple-converted-space"> </span></p>
+<p class="p1">Undo<span class="Apple-converted-space">    </span>^x ^u, ^_</p>
+<p class="p1">Undo all in line<span class="Apple-converted-space">  </span>alt+r</p>
+<p class="p1"><span class="Apple-converted-space">                                                        </span>(eof)<span class="Apple-converted-space">  </span>G</p>
+<p class="p1">-r<span class="Apple-converted-space"> </span></p>
+<p class="p1">/<span class="Apple-converted-space">  </span>search forwad <span class="Apple-converted-space">  </span>?<span class="Apple-converted-space">  </span>search back <span class="Apple-converted-space">  </span>n<span class="Apple-converted-space">  </span>nxt srch <span class="Apple-converted-space">  </span>N<span class="Apple-converted-space">  </span>pre srch</p>
+<p class="p1">first occurrence single line :s/bash/perl/<span class="Apple-converted-space"> </span></p>
+<p class="p1">all occurrences single line :s/bash/perl/g</p>
+<p class="p1">first occurrence between liMne range: :23,100s/bash/perl/<span class="Apple-converted-space"> </span></p>
+<p class="p1">all occurrences between line range: :23,100s/bash/perl/g</p>
+<p class="p1">first occurrence in whole text: :%s/bash/perl/<span class="Apple-converted-space"> </span></p>
+<p class="p1">all occurrences whole text: :%s/bash/perl/g</p>
+<p class="p2"><br></p>
+<p class="p1">v <span class="Apple-converted-space">  </span>visual to select/highlight text by navigation keys</p>
+<p class="p2"><br></p>
+<p class="p1">:e filename - Edit a file in a new buffer</p>
+<p class="p1">:bnext (or :bn) - go to next buffer</p>
+<p class="p1">:bprev (of :bp) - go to previous buffer</p>
+<p class="p1">:bd - delete a buffer (close a file)</p>
+<p class="p1">:sp filename - Open a file in a new buffer and split window</p>
+<p class="p1">ctrl+ws - Split windows</p>
+<p class="p1">ctrl+ww - switch between windows</p>
+<p class="p1">ctrl+wq - Quit a window</p>
+<p class="p1">ctrl+wv - Split windows vertically</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">hidden char :set list/nolist</p>
+<p class="p1">UTF-8 Setup Mini HOWTO http://www.maruko.ca/i18n/</p>
+<p class="p2"><br></p>
+<p class="p1">Formatting a functionEdit</p>
+<p class="p1"><span class="Apple-converted-space">  </span>Here are some basic formatting commands:</p>
+<p class="p1"><span class="Apple-converted-space">    </span>= is an operator (by default, it formats/indents text).</p>
+<p class="p1"><span class="Apple-converted-space">    </span>i{ is a text object that specifies the surrounding code block.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>vi{ visually selects the inner code block around the cursor.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>=i{ formats the code block.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>=2i{ formats the current block and the block around it.</p>
+<p class="p2"><br></p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p9"><b>Useful Emacs Commands</b><span class="Apple-converted-space"> </span></p>
+<p class="p3"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p4"><b>Commands</b></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p4"><b>Comments</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><b>C-q C-j</b></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><b>insert new line</b></p>
+        <p class="p4">This will insert a newline character in the buffer. It is especially useful when trying to insert a newline in the minibuffer.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><b>M-:</b></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><b>eval-expression</b></p>
+        <p class="p4">After typing the command, you can invoke an interactive lisp command with argument. For example, (forward-char 10).</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><b>C-x ESC ESC</b></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><b>repeat-complex-command</b></p>
+        <p class="p4">After typing the command, you will see "Redo: (....)" at the mini buffer. the (....) is the last command you have executed through the mini buffer. You may press enter to execute the command. Or you may press alt-p or alt-n to select from the history of commands that you have executed through the mini buffer. td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><b>C-h k</b></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><b>describe-key</b></p>
+        <p class="p4">After typing the command, you will see the "Describe Key:" prompt in the mini buffer. Now you can press any combination of keys to check what function is bound to the keys.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><b>C-h l</b></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><b>100 keystrokes</b></p>
+        <p class="p4">Lists the last 100 keystrokes.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><b>C-h f</b></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><b>describe-function</b></p>
+        <p class="p4">After typing the command, you will see the "Describe Function:" prompt in the mini buffer. Now you can enter a function name, for example <b>forward-char</b>. The description of the function will be shown in another buffer.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><b>C-h v</b></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><b>describe-variable</b></p>
+        <p class="p4">After typing the command, you will see the "Describe Variable:" prompt in the mini buffer. Now you can enter a variable name, for example <b>inhibit-read-only</b>. The description of the variable will be shown in another buffer.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><b>M-x hexl-mode</b></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><b>Hex Editor Mode</b><span class="Apple-converted-space"> </span></p>
+        <p class="p10"><br></p>
+        <p class="p4">While viewing a file, you may invoke the command to view the file in Hex/Binary mode. It allows you to "hex edit" the file. To insert a hex string, use "M-x hexl-insert-hex-char" or "M-x hexl-insert-hex-string".</p>
+        <p class="p11">The external program used is distributed together with GNU Emacs. This means no additional installation is required.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><b>M-x calendar</b></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><b>Calendar</b></p>
+        <p class="p4">A calendar.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><b>M-x calculator</b></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><b>Calculator</b></p>
+        <p class="p4">This is a handy calculator. You can do number conversion with the following commands.</p>
+        <p class="p4">D - to decimal</p>
+        <p class="p4">X - to hexadecimal</p>
+        <p class="p4">O - to octal</p>
+        <p class="p4">B - to binary</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><b>M-x occur</b></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p11"><b>Find the occurence of a specified string</b><span class="s4"><br>
+</span>While visiting a buffer, this utility allows you to list out all the occurence of a specified regular expression.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times"><b>Emacs for vi users</b></h1>
+<p class="p4"><i>"Why can't I enter command mode?"</i></p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Introduction</b></h2>
+<p class="p11">This is intended as an introductory guide for vi users wishing to learn the basics of Emacs. I'm writing it because I'm one of them, and I suspect that I'm not alone in being mystified by the lack of a command mode, text objects and an underlying <span class="s5">ex</span> editor, as well as the plethora of strange and unfamiliar key combinations. The intent is to give fledgling Emacs users a basic set of commands, sufficient for basic editing.</p>
+<p class="p11">This page is a basic Emacs survival guide for the vi user. It is grounded in familiarity of vi and (quite naturally) assumes a vi-centric view of the world. Since the structure is that of a list of corresponding commands, I will not list features that are unique to Emacs. I believe there to be sufficient overlap between the capabilities of each editor to motivate this approach.</p>
+<p class="p11">This is not a joke. It is not about religion or the <a href="http://en.wikipedia.org/wiki/Editor_war"><span class="s6">Editor war</span></a> and I will not present one editor as better than the other. Neither is it about the Emacs mindset, since I have yet to acquire it myself. Finally, it is not a proper Emacs tutorial. If you want to learn Emacs propely, go find a proper tutorial. There is one built into Emacs, for example.</p>
+<p class="p11">Finally, it is not complete and I <a href="mailto:public@elmindreda.org"><span class="s6">welcome contributions</span></a>.</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Basics</b></h2>
+<p class="p11">Emacs doesn't have a separate command mode. In a sense, you're always in insert mode. Therefore, special modifier keys are needed to tell commands apart from typed characters. The two commonly used modifiers are <i>Control</i> and <i>Meta</i>. On many systems, the Alt key can be used as Meta. If your system lacks a functional Meta key, you can type Escape before the specified key.</p>
+<p class="p11">Since Control and Meta are so frequently used in Emacs, they have created a special convention for writing such commands, so for example <b>C-a</b> corresponds to <i>Control+A</i>, and <b>M-f</b> corresponds to <i>Meta+F</i>. The Emacs command column will use this convention. This is also consistent with the documentation in Emacs.</p>
+<p class="p11">Many Emacs commands take numerical prefixes, but you need to hold down Meta while typing them. So, for example, type M-2 M-3 M-g g instead of 23G to go to line 23.</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Commands</b></h2>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Program operations</b></h3>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p4">Action</p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p4">gi</p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p4">Emacs</p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p4">Notes on Emacs</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p4">Exit program</p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p4">:q <i>Enter</i></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p4">C-x C-c</p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p4">If changes exist, will ask whether or not to save them.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p4">Unconditionally exit program</p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p4">:q! <i>Enter</i></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p4">C-x C-c</p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p4">Just say no.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p4">Save current buffer and exit program</p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p4">:wq <i>Enter</i></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p4">C-x C-s C-x C-c</p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p4">Cancel command</p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p4"><i>Ctrl+c</i></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p4">C-g</p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p4">Redraw screen</p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p4"><i>Ctrl+l</i></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p4">C-l</p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p4">Command line</p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p4">:</p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p4">M-x</p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>File operations</b></h3>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td11">
+        <p class="p4">Action</p>
+      </td>
+      <td valign="middle" class="td12">
+        <p class="p4">vi</p>
+      </td>
+      <td valign="middle" class="td13">
+        <p class="p4">Emacs</p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p4">Notes on Emacs</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td11">
+        <p class="p4">Open file, or create named buffer</p>
+      </td>
+      <td valign="middle" class="td12">
+        <p class="p4">:e <i>filename</i> <i>Enter</i></p>
+      </td>
+      <td valign="middle" class="td13">
+        <p class="p4">C-x C-f <i>filename</i></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td11">
+        <p class="p4">Save current buffer</p>
+      </td>
+      <td valign="middle" class="td12">
+        <p class="p4">:w <i>Enter</i></p>
+      </td>
+      <td valign="middle" class="td13">
+        <p class="p4">C-x C-s</p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p4">Will not save a new, unmodified file.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td11">
+        <p class="p4">Save current buffer under new name</p>
+      </td>
+      <td valign="middle" class="td12">
+        <p class="p4">:w <i>filename</i> <i>Enter</i></p>
+      </td>
+      <td valign="middle" class="td13">
+        <p class="p4">C-x C-w <i>filename</i></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td11">
+        <p class="p4">Move to next buffer</p>
+      </td>
+      <td valign="middle" class="td12">
+        <p class="p4">:n <i>Enter</i></p>
+      </td>
+      <td valign="middle" class="td13">
+        <p class="p4">C-x b <i>buffer</i></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td11">
+        <p class="p4">Move to previous buffer</p>
+      </td>
+      <td valign="middle" class="td12">
+        <p class="p4">:prev <i>Enter</i></p>
+      </td>
+      <td valign="middle" class="td13">
+        <p class="p4">C-x b Enter</p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Navigation</b></h3>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Action</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">vi</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">Emacs</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p4">Notes on Emacs</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to beginning of buffer</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">1G</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">M-&lt;</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to end of buffer</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">G</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">M-&gt;</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go left one character</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">h</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">C-b</p>
+        <p class="p4">Left</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p4">Will wrap to previous line.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go right one character</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">l</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">C-f</p>
+        <p class="p4">Right</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p4">Will wrap to next line.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go up one line</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">k</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">C-p</p>
+        <p class="p4">Up</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go down one line</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">j</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">C-n</p>
+        <p class="p4">Down</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to line <i>n</i></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4"><i>n</i>G</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">M-x goto-line Enter <i>n</i></p>
+        <p class="p4">M-g g <i>n</i> Enter</p>
+        <p class="p4">M-<i>n</i> M-g g</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to beginning of line</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">0</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">C-a</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to end of line</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">$</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">C-e</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p4">Places cursor one step beyond last character.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to next word</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">w</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">M-f</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p4">Stops at first non-word character before the word.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to previous word</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">b</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">M-b</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to next page</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4"><i>Ctrl+f</i></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">C-v</p>
+        <p class="p4">PageUp</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to previous page</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4"><i>Ctrl+b</i></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">M-v</p>
+        <p class="p4">PageDn</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Set mark <i>x</i></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">m<i>x</i></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">C-x r Space <i>x</i></p>
+        <p class="p4">M-x point-to-register Enter <i>x</i></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to mark <i>x</i></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">'<i>x</i></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">C-x r j <i>x</i></p>
+        <p class="p4">M-x register-to-point Enter <i>x</i></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to first displayed line</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">H</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p3"><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Go to last displayed line</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4">L</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p3"><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Move buffer one line up</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4"><i>Ctrl+y</i></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">C-1 M-v</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p4">Move buffer one line down</p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p4"><i>Ctrl+e</i></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p4">C-1 C-v</p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Text editing</b></h3>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Action</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">vi</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">Emacs</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p4">Notes on Emacs</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Insert text</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">i</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p3"><br></p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p4">Always in insert mode.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Append text</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">a</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">C-f</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p4">Only cursor movement is needed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Insert at beginning of line</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">I</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">C-a</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p4">Only cursor movement is needed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Append to end of line</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">A</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">C-e</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p4">Only cursor movement is needed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Delete character forwards</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">x</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">C-d</p>
+        <p class="p4">Delete</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Delete character backwards</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">X</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">Backspace</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Change to end of line</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">C</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">C-k</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p4">Only deletion is needed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Delete to end of line</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">D</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">C-k</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p4">Removes line entirely if empty.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Delete entire line</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">dd</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">C-a C-k</p>
+        <p class="p4">C-a C-k C-k</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p4">For empty lines</p>
+        <p class="p4">For non-empty lines</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Delete word forwards</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">dw</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">M-d</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p4">Does not delete whitespace before next word.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Delete word backwards</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">db</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">M-Backspace</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Open line above</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">O</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">C-o</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Open line below</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">o</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">C-e Enter</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Join lines</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">J</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">C-n C-a Backspace</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p4">Undo last edit</p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p4">u</p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p4">C-x u</p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Yanking and placing</b></h3>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td20">
+        <p class="p4">Action</p>
+      </td>
+      <td valign="middle" class="td22">
+        <p class="p4">vi</p>
+      </td>
+      <td valign="middle" class="td23">
+        <p class="p4">Emacs</p>
+      </td>
+      <td valign="middle" class="td24">
+        <p class="p4">Notes on Emacs</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td20">
+        <p class="p4">Yank line</p>
+      </td>
+      <td valign="middle" class="td22">
+        <p class="p4">yy</p>
+      </td>
+      <td valign="middle" class="td23">
+        <p class="p4">C-a C-k</p>
+        <p class="p4">C-a C-k C-k</p>
+      </td>
+      <td valign="middle" class="td24">
+        <p class="p4">For empty lines</p>
+        <p class="p4">For non-empty lines</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td20">
+        <p class="p4">Yank <i>n</i> lines</p>
+      </td>
+      <td valign="middle" class="td22">
+        <p class="p4"><i>n</i>yy</p>
+      </td>
+      <td valign="middle" class="td23">
+        <p class="p4">C-Space <i>(move to line below last desired)</i> M-w</p>
+      </td>
+      <td valign="middle" class="td24">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td20">
+        <p class="p4">Cut <i>n</i> lines down</p>
+      </td>
+      <td valign="middle" class="td22">
+        <p class="p4"><i>n</i>dd</p>
+      </td>
+      <td valign="middle" class="td23">
+        <p class="p4">M-<i>n</i> C-k</p>
+      </td>
+      <td valign="middle" class="td24">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td20">
+        <p class="p4">Paste before cursor</p>
+      </td>
+      <td valign="middle" class="td22">
+        <p class="p4">P</p>
+      </td>
+      <td valign="middle" class="td23">
+        <p class="p4">C-y</p>
+      </td>
+      <td valign="middle" class="td24">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td20">
+        <p class="p4">Paste after cursor</p>
+      </td>
+      <td valign="middle" class="td22">
+        <p class="p4">p</p>
+      </td>
+      <td valign="middle" class="td23">
+        <p class="p3"><br></p>
+      </td>
+      <td valign="middle" class="td24">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Searching and substitution</b></h3>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p4">Action</p>
+      </td>
+      <td valign="middle" class="td26">
+        <p class="p4">vi</p>
+      </td>
+      <td valign="middle" class="td27">
+        <p class="p4">Emacs</p>
+      </td>
+      <td valign="middle" class="td28">
+        <p class="p4">Notes on Emacs</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p4">Search forwards</p>
+      </td>
+      <td valign="middle" class="td26">
+        <p class="p4">/<i>pattern</i> <i>Enter</i></p>
+      </td>
+      <td valign="middle" class="td27">
+        <p class="p4">C-s <i>pattern</i> Enter</p>
+      </td>
+      <td valign="middle" class="td28">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p4">Search backwards</p>
+      </td>
+      <td valign="middle" class="td26">
+        <p class="p4">?<i>pattern</i> <i>Enter</i></p>
+      </td>
+      <td valign="middle" class="td27">
+        <p class="p4">C-r <i>pattern</i> Enter</p>
+      </td>
+      <td valign="middle" class="td28">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p4">Global replace text</p>
+      </td>
+      <td valign="middle" class="td26">
+        <p class="p4">:%s/<i>pattern</i>/<i>with</i>/gc <i>Enter</i></p>
+      </td>
+      <td valign="middle" class="td27">
+        <p class="p4">M-% <i>word</i> Enter <i>with</i> Enter</p>
+        <p class="p4">C-M-% <i>pattern</i> Enter <i>with</i> Enter</p>
+      </td>
+      <td valign="middle" class="td28">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Window operations</b></h3>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td29">
+        <p class="p4">Action</p>
+      </td>
+      <td valign="middle" class="td30">
+        <p class="p4">Vim</p>
+      </td>
+      <td valign="middle" class="td31">
+        <p class="p4">Emacs</p>
+      </td>
+      <td valign="middle" class="td28">
+        <p class="p4">Notes on Emacs</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td29">
+        <p class="p4">Split horizontally</p>
+      </td>
+      <td valign="middle" class="td30">
+        <p class="p4"><i>Ctrl+w s</i></p>
+      </td>
+      <td valign="middle" class="td31">
+        <p class="p4">C-x 2</p>
+      </td>
+      <td valign="middle" class="td28">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td29">
+        <p class="p4">Split vertically</p>
+      </td>
+      <td valign="middle" class="td30">
+        <p class="p4"><i>Ctrl+w v</i></p>
+      </td>
+      <td valign="middle" class="td31">
+        <p class="p4">C-x 3</p>
+      </td>
+      <td valign="middle" class="td28">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td29">
+        <p class="p4">Close current window</p>
+      </td>
+      <td valign="middle" class="td30">
+        <p class="p4"><i>Ctrl+w c</i></p>
+      </td>
+      <td valign="middle" class="td31">
+        <p class="p3"><br></p>
+      </td>
+      <td valign="middle" class="td28">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td29">
+        <p class="p4">Close all but current windows</p>
+      </td>
+      <td valign="middle" class="td30">
+        <p class="p4"><i>Ctrl+w o</i></p>
+      </td>
+      <td valign="middle" class="td31">
+        <p class="p4">C-x 1</p>
+      </td>
+      <td valign="middle" class="td28">
+        <p class="p3"><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times"><b>Hibernation</b></h1>
+<p class="p4">How to check current mode</p>
+<p class="p5">pmset -g | grep hibernate</p>
+<p class="p3"><br></p>
+<p class="p4">Setting Default (sleep) mode:</p>
+<p class="p5">sudo pmset -a hibernatemode 3</p>
+<p class="p3"><br></p>
+<p class="p4">Enabling <b>hibernation</b>:</p>
+<p class="p4">Set <b>Startup disk to Mac</b></p>
+<p class="p4">Run command-</p>
+<p class="p5">sudo pmset -a hibernatemode 1</p>
+<p class="p3"><br></p>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times"><b>iPhoto/Photography</b></h1>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Q) How to change image create date time &amp; modify date?</b></h3>
+<p class="p4">1) <a href="http://www.timeanddate.com/date/timeduration.html?d1=&amp;m1=&amp;y1=&amp;d2=&amp;m2=&amp;y2="><span class="s6">Calculate time difference/duration</span></a> between the date on image and the actual date</p>
+<p class="p4">2) Run below command</p>
+<p class="p5">syntax: exiftool -alldates+='yy:mm:dd hh:MM:ss' &lt;img_dir&gt;<span class="s1"><br>
+</span>exiftool -alldates<b>+='01:05:02 00:00:00' imgmodi</b></p>
+<p class="p3"><br></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Q) How to add GPS/geotags to images?</b></h3>
+<p class="p4"><b>Methos 1 adding manually</b></p>
+<p class="p4">1) Get gps co-ordinates from google map</p>
+<p class="p4">The easiest way to use exiftool to do it is to edit the</p>
+<p class="p4">individual GPS tags directly. The tags used are:</p>
+<p class="p3"><br></p>
+<p class="p5">GPSlatitude (always positive)<span class="s1"><br>
+</span>GPSlatitudeRef (N or S)<span class="s1"><br>
+</span>GPSlongitude (always positive)<span class="s1"><br>
+</span>GPSlongitudeRef (E or W)</p>
+<p class="p3"><br></p>
+<p class="p4">Case isn't important in tag names.</p>
+<p class="p3"><br></p>
+<p class="p4">So using the values you gave above the command line (without</p>
+<p class="p4">the line wrap of course) becomes:</p>
+<p class="p3"><br></p>
+<p class="p5">exiftool -gpslatitude=77.1 -gpslatituderef=S -gpslongitude=34.2 -gpslongituderef=E c:\pictures\*.jpg</p>
+<p class="p3"><br></p>
+<p class="p4">By default exiftool will rename your originals and write new</p>
+<p class="p4">modified copies, but if you want to save to the originals</p>
+<p class="p4">you can add the <b>"-overwrite_original"</b> directive to the start</p>
+<p class="p4">of the command line.</p>
+<p class="p3"><br></p>
+<p class="p4"><b>Methos 2 adding manually</b></p>
+<p class="p4">Use Google Earth to geotag *one* "template" image.</p>
+<p class="p4">Let's assume this file is called <b>"template.jpg"</b> and it's in the root of C:.</p>
+<p class="p3"><br></p>
+<p class="p4">A simple line like:</p>
+<p class="p5">exiftool -overwrite_original -tagsfromfile c:\template.jpg -gps:all c:\pictures\*.jpg</p>
+<p class="p3"><br></p>
+<p class="p4">would copy the GPS tags from the "template" file to all the</p>
+<p class="p4">JPEGs in the target directory.</p>
+<p class="p3"><br></p>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times"><b>todo notes</b></h1>
+<p class="p1"><span class="Apple-converted-space">    </span>mount -t ext3 /dev/cobd2 /mnt</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>adduser jatin</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cp -rup /mnt/home/jatin /home/jatin</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>sudo mount cofs2 myDocs -t cofs -o uid=jatin</p>
+<p class="p1"><span class="Apple-converted-space">    </span>sudo mount cofs1 /Volume/BOOTCAMP/ -t cofs -o uid=jatin</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times"><b>How to enable wireless mouse and keyboard</b></h1>
+<ol class="ol1">
+  <li class="li4">Open Services:</li>
+  <ol class="ol1">
+    <li class="li4">To still type things out, start the on-screen keyboard by going to S<b>tart &gt; Programs &gt; Accessories &gt; Accessibility &gt; On-Screen Keyboard</b>.  From there, you can then do <b>Start &gt; Run</b> and then type <i>services.msc</i></li>
+    <li class="li4">To directly access Services, do <b>Start &gt; Control Panel &gt; Administrative Tools &gt; Services</b></li>
+  </ol>
+  <li class="li4">Find &amp; select the <b>Bluetooth Support Service</b>, right click and select <b>Properties</b>.</li>
+  <li class="li4">Click the <b>Stop</b> button on the <b>General</b> tab.</li>
+  <li class="li4">Select the <b>Log On</b> tab, and select the radio button next to <b>Local System account</b>, then click <b>Apply</b>.</li>
+  <li class="li4">Go back to the <b>General</b> tab and click the <b>Start</b> button.</li>
+  <li class="li4">Click <b>OK</b> to close the Properties dialog.</li>
+  <li class="li4">Restart computer to make sure the change takes and things work.</li>
+</ol>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times"><b>.vimrc sample</b></h1>
+<p class="p1">syntax on</p>
+<p class="p2"><br></p>
+<p class="p1">set wildmenu "Turn on WiLd menu</p>
+<p class="p2"><br></p>
+<p class="p1">set ruler "Always show current position</p>
+<p class="p2"><br></p>
+<p class="p1">" set cmdheight=2 "The commandbar height</p>
+<p class="p2"><br></p>
+<p class="p1">" set hid "Change buffer - without saving</p>
+<p class="p2"><br></p>
+<p class="p1">" Set backspace config</p>
+<p class="p1">" set backspace=eol,start,indent</p>
+<p class="p1">" set whichwrap+=&lt;,&gt;,h,l</p>
+<p class="p2"><br></p>
+<p class="p1">set ignorecase "Ignore case when searching</p>
+<p class="p1">set smartcase</p>
+<p class="p2"><br></p>
+<p class="p1">set hlsearch "Highlight search things</p>
+<p class="p2"><br></p>
+<p class="p1">set incsearch "Make search act like search in modern browsers</p>
+<p class="p1">set nolazyredraw "Don't redraw while executing macros<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">set magic "Set magic on, for regular expressions</p>
+<p class="p2"><br></p>
+<p class="p1">set showmatch "Show matching bracets when text indicator is over them</p>
+<p class="p1">" set mat=2 "How many tenths of a second to blink</p>
+<p class="p2"><br></p>
+<p class="p1">" No sound on errors</p>
+<p class="p1">set noerrorbells</p>
+<p class="p1">set novisualbell</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</p>
+<p class="p1">" =&gt; Text, tab and indent related</p>
+<p class="p1">"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""</p>
+<p class="p1">set expandtab</p>
+<p class="p1">set shiftwidth=4</p>
+<p class="p1">set tabstop=4</p>
+<p class="p1">set smarttab</p>
+<p class="p2"><br></p>
+<p class="p1">set lbr</p>
+<p class="p1">" set tw=500</p>
+<p class="p2"><br></p>
+<p class="p1">set ai "Auto indent</p>
+<p class="p1">set si "Smart indet</p>
+<p class="p1">set wrap "Wrap lines</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times"><b>ffmpeg</b></h1>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times; min-height: 29.0px"><b></b><br></h1>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Getting infos from a video file</b></h2>
+<p class="p1">ffmpeg -i video.avi</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Turn X images to a video sequence</b></h2>
+<p class="p1">ffmpeg -f image2 -i image%d.jpg video.mpg</p>
+<p class="p11">This command will transform all the images from the current directory (named image1.jpg, image2.jpg, etc…) to a video file named video.mpg.</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Turn a video to X images</b></h2>
+<p class="p1">ffmpeg -i video.mpg image%d.jpg</p>
+<p class="p11">This command will generate the files named image1.jpg, image2.jpg, …</p>
+<p class="p11">The following image formats are also availables : PGM, PPM, PAM, PGMYUV, JPEG, GIF, PNG, TIFF, SGI.</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Encode a video sequence for the iPpod/iPhone</b></h2>
+<p class="p1">ffmpeg -i source_video.avi input -acodec aac -ab 128kb -vcodec mpeg4 -b 1200kb -mbd 2 -flags +4mv+trell -aic 2 -cmp 2 -subcmp 2 -s 320x180 -title X final_video.mp4</p>
+<p class="p11">Explanations :</p>
+<ul class="ul1">
+  <li class="li4">Source : source_video.avi</li>
+  <li class="li4">Audio codec : aac</li>
+  <li class="li4">Audio bitrate : 128kb/s</li>
+  <li class="li4">Video codec : mpeg4</li>
+  <li class="li4">Video bitrate : 1200kb/s</li>
+  <li class="li4">Video size : 320px par 180px</li>
+  <li class="li4">Generated video : final_video.mp4</li>
+</ul>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Encode video for the PSP</b></h2>
+<p class="p1">ffmpeg -i source_video.avi -b 300 -s 320x240 -vcodec xvid -ab 32 -ar 24000 -acodec aac final_video.mp4</p>
+<p class="p11">Explanations :</p>
+<ul class="ul1">
+  <li class="li4">Source : source_video.avi</li>
+  <li class="li4">Audio codec : aac</li>
+  <li class="li4">Audio bitrate : 32kb/s</li>
+  <li class="li4">Video codec : xvid</li>
+  <li class="li4">Video bitrate : 1200kb/s</li>
+  <li class="li4">Video size : 320px par 180px</li>
+  <li class="li4">Generated video : final_video.mp4</li>
+</ul>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Extracting sound from a video, and save it as Mp3</b></h2>
+<p class="p1">ffmpeg -i source_video.avi -vn -ar 44100 -ac 2 -ab 192 -f mp3 sound.mp3</p>
+<p class="p11">Explanations :</p>
+<ul class="ul1">
+  <li class="li4">Source video : source_video.avi</li>
+  <li class="li4">Audio bitrate : 192kb/s</li>
+  <li class="li4">output format : mp3</li>
+  <li class="li4">Generated sound : sound.mp3</li>
+</ul>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Convert a wav file to Mp3</b></h2>
+<p class="p1">ffmpeg -i son_origine.avi -vn -ar 44100 -ac 2 -ab 192 -f mp3 son_final.mp3</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Convert .avi video to .mpg</b></h2>
+<p class="p1">ffmpeg -i video_origine.avi video_finale.mpg</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Convert .mpg to .avi</b></h2>
+<p class="p1">ffmpeg -i video_origine.mpg video_finale.avi</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Convert .avi to animated gif(uncompressed)</b></h2>
+<p class="p1">ffmpeg -i video_origine.avi gif_anime.gif</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Mix a video with a sound file</b></h2>
+<p class="p1">ffmpeg -i son.wav -i video_origine.avi video_finale.mpg</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Convert .avi to .flv</b></h2>
+<p class="p1">ffmpeg -i video_origine.avi -ab 56 -ar 44100 -b 200 -r 15 -s 320x240 -f flv video_finale.flv</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Convert .avi to dv</b></h2>
+<p class="p1">ffmpeg -i video_origine.avi -s pal -r pal -aspect 4:3 -ar 48000 -ac 2 video_finale.dv</p>
+<p class="p11">Or:</p>
+<p class="p1">ffmpeg -i video_origine.avi -target pal-dv video_finale.dv</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Convert .avi to mpeg for dvd players</b></h2>
+<p class="p1">ffmpeg -i source_video.avi -target pal-dvd -ps 2000000000 -aspect 16:9 finale_video.mpeg</p>
+<p class="p11">Explanations :</p>
+<ul class="ul1">
+  <li class="li4">target pal-dvd : Output format</li>
+  <li class="li4">ps 2000000000 maximum size for the output file, in bits (here, 2 Gb)</li>
+  <li class="li4">aspect 16:9 : Widescreen</li>
+</ul>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Compress .avi to divx</b></h2>
+<p class="p1">ffmpeg -i video_origine.avi -s 320x240 -vcodec msmpeg4v2 video_finale.avi</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Compress Ogg Theora to Mpeg dvd</b></h2>
+<p class="p1">ffmpeg -i film_sortie_cinelerra.ogm -s 720x576 -vcodec mpeg2video -acodec mp3 film_terminÃ©e.mpg</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Compress .avi to SVCD mpeg2</b></h2>
+<p class="p11">NTSC format:</p>
+<p class="p1">ffmpeg -i video_origine.avi -target ntsc-svcd video_finale.mpg</p>
+<p class="p11">PAL format:</p>
+<p class="p1">ffmpeg -i video_origine.avi -target pal-svcd video_finale.mpg</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Compress .avi to VCD mpeg2</b></h2>
+<p class="p11">NTSC format:</p>
+<p class="p1">ffmpeg -i video_origine.avi -target ntsc-vcd video_finale.mpg</p>
+<p class="p11">PAL format:</p>
+<p class="p1">ffmpeg -i video_origine.avi -target pal-vcd video_finale.mpg</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Multi-pass encoding with ffmpeg</b></h2>
+<p class="p1">ffmpeg -i fichierentree -pass 2 -passlogfile ffmpeg2pass fichiersortie-2</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p12"><b>DVD Ripper/Mac</b></p>
+<p class="p1"><a href="http://www.simplehelp.net/2010/09/20/how-to-rip-movie-dvds-to-watch-on-your-ipad-in-os-x/">How to ...</a></p>
+<p class="p1"><a href="http://en.wikipedia.org/wiki/DVD_ripper">Wiki list of rippres</a></p>
+<p class="p1"><a href="http://handbrake.fr/details.php">Handbake</a>for Mac</p>
+<p class="p2"><br></p>
+<p class="p12"><b>DVD Ripper/Windows</b></p>
+<p class="p15"><a href="http://www.dvddecrypter.org.uk/">DVD Decrypter</a></p>
+<p class="p16"><a href="http://en.wikipedia.org/wiki/DVD_Shrink">DVD Shrink</a></p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@startuml
+
+title Start Workflow
+
+box "any_svc"
+
+  participant "Any_api" as x
+  participant "IAny_svc" as x_svc
+end box
+
+box "Bonita Connector"
+  participant "BonitaConnector" as bonita_connector
+  participant "lib.Bonita" as lib_bonita
+end box
+
+[-> x: Post(Action,Data)
+activate x
+
+  x -> x_svc: Serve(Action,Data)
+  x_svc -> x: Done
+
+  'Start Workflow
+  x -> bonita_connector: Start(ActionId,Data)
+  activate bonita_connector
+
+    bonita_connector -> bonita_connector: Resolve <User>
+    activate bonita_connector
+
+    bonita_connector -> bonita_connector: Done
+    deactivate bonita_connector
+
+    bonita_connector -> bonita_connector: Resolve <Workflow> for ActionId
+    activate bonita_connector
+
+    bonita_connector -> bonita_connector: Done
+    deactivate bonita_connector
+   
+    bonita_connector -> lib_bonita: Workflow <Instantiate>
+    lib_bonita -> bonita_connector: Result
+
+  bonita_connector -> x: Done
+  deactivate bonita_connector
+
+[<- x: Done
+deactivate x
+
+@enduml

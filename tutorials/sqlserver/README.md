@@ -1,8 +1,13 @@
+# SQL                                                 
+
+```bash
 # Jatin Kumar Copyright (C) 2016 - All Rights Reserved. See the LICENSE
 # file at the top-level directory of this distribution 
 # Author: Jatin Kumar <jatinkr@gmail.com>
+```
 
-#SQL                                                 
+## Commands
+```bash
 #List all Databases                 #list table, run stored procedure
   exec sp_databases                   sp_help
   go                                  go
@@ -22,27 +27,31 @@ or exec sp_columns <tableName>;go
     ORDER BY 3 DESC,        --  type first
     1 ASC,          --  then schema
     2 ASC           --  then function/table name
+```
 
+```bash
 #List all tables                                     #List of stored procedures:
  use DatabaseNameBlahBlahBlah                         use DatabaseNameBlahBlahBlah
  select name from sysobjects where type = 'U'         select name from sysobjects where type = 'P'
  go                                                   go
+ ```
 
-#List SP content
+### List SP content
+
+```sql
 EXEC sp_helptext N'AdventureWorks2012.dbo.uspLogError';  
 or
 SELECT OBJECT_DEFINITION (OBJECT_ID(N'AdventureWorks2012.dbo.uspLogError'));  
+```
 
-#Login                                               #For Mac OSX
- sqlcmd -U sa -P root -S localhost                    tsql instead of sqlcmd
 
-#Run an SQL script                                           #Run Query and exit
- sqlcmd -U username -S server\instance -e -i script.sql      sqlcmd -S server\instance -Q "cmd" -o "outputfile"
-
-#Select a DB
+### Select a DB
+```sql
   use dbname
+```
 
-#Creating a DB
+### Creating a DB
+```sql
   CREATE DATABASE dbName
   ON (
     NAME = dbName_dat,
@@ -52,19 +61,62 @@ SELECT OBJECT_DEFINITION (OBJECT_ID(N'AdventureWorks2012.dbo.uspLogError'));
     NAME = dbName_log,
     FILENAME = 'D:\path\to\dbName.ldf'
   )
+ ```
 
-# create 2
+
+### create 2
+```sql
   sqlcmd -i C:\path\to\file.sql
+```
 
-# create 3
+### create 3
+```sql
   CREATE DATABASE MYDB
   GO
+```
 
-#Change column type
+### Change column type
+```sql
  ALTER TABLE your_table   your_column varchar(20)
+```
 
-#Change column name
+### Change column name
+```sql
  sp_RENAME 'your_table.old_column', 'new_column', 'COLUMN'
+```
 
-# installing sql*plus in mac
+### Create User for Login
+
+```sql
+USE Master
+GO
+
+ALTER LOGIN dev_user WITH PASSWORD = 'sql@123$'
+GO
+
+ALTER LOGIN dev_user WITH
+  CHECK_POLICY = OFF,
+  CHECK_EXPIRATION = OFF;
+
+
+ALTER LOGIN dev_user ENABLE
+
+
+USE master
+GO
+
+GRANT ALTER ANY DATABASE TO dev_user
+GO
+```
+
+## Bash Commands
+```bash
+### Run an SQL script                                           #Run Query and exit
+ sqlcmd -U username -S server\instance -e -i script.sql      sqlcmd -S server\instance -Q "cmd" -o "outputfile"
+
+### Login                                               #For Mac OSX
+ sqlcmd -U sa -P root -S localhost                    tsql instead of sqlcmd
+
+### installing sql*plus in mac
 https://tomeuwork.wordpress.com/2014/05/12/how-to-install-oracle-sqlplus-and-oracle-client-in-mac-os/
+```

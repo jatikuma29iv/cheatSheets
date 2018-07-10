@@ -1,0 +1,30 @@
+@startuml
+
+title Class Diagram
+
+package App {
+
+  interface IAny_svc
+  interface IWorkflow_svc {
+    Start()
+    DoTask()
+  }
+
+  class Any_api
+
+  IAny_svc o-down- Any_api
+  IWorkflow_svc o-down- Any_api
+}
+
+
+package plugings {
+
+  IWorkflow_svc <|-right- BonitaConnector
+}
+
+package lib {
+
+  Bonita <.right. BonitaConnector
+}
+
+@enduml
