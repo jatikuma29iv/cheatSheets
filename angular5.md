@@ -14,6 +14,16 @@ Loader
 
 [How To Style Angular Application Loading With Angular CLI Like a Boss](https://medium.com/@tomastrajan/how-to-style-angular-application-loading-with-angular-cli-like-a-boss-cdd4f5358554)
 
+## How to put Hook into Angular’s Initialization Process
+
+https://hackernoon.com/hook-into-angular-initialization-process-add41a6b7e
+
+eg. configure services/components based on settings read from server
+
+_**This article originally appeared on dormoshe.io**_
+
+Sometimes you need to hook into internal processes. Sometimes you need to run your code before the application is being loaded. Sometimes you need to configure parts of the application before the page is being rendered. Sometimes you want to suspend the initialization until some restriction is being done. In Angular v4 you can do this with the __APP_INITIALIZER__ token.
+
 ## Custom Modules
 
 - Create
