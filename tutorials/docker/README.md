@@ -3,7 +3,21 @@
 ## Docker Hub
 ```bash
 # login to docker hub
+> docker login
+... use docker hub id (not email)
+
+# eg
 $ docker login --username=jatintechjini --email=jatin@techjini.com
+```
+
+## Commands
+```powershell
+> docker info
+> docker version
+> docker ps
+> docker images
+> docker pull <image>
+> docker run <image>
 ```
 
 ## Docker
@@ -65,6 +79,10 @@ Install-ContainerImage -Name WindowsServerCore
 
 Invoke-WebRequest https://aka.ms/tp5/Update-Container-Host -OutFile update-containerhost.ps1
 
-
-
 ```
+
+### Windows Pro
+
+On installing docker for windows use following option
+	 [ X ] Use Windows containers instead of Linux containers (this can be changed after installation)
+    
