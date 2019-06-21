@@ -18,3 +18,6 @@ Push the data : Git push
 
 5.To add File to repository : git add
 ```
+
+## How to add more to Git Bash on Windows
+[https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058)
