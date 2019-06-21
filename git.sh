@@ -128,6 +128,11 @@ git config mergetool.prompt false
   git am --signoff < fix_empty_poster.patch // apply the patch
   
 # Three way compare manually
+
+
+## How to add more to Git Bash on Windows
+[https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058)
+
   git show <commit/branch/ref>:<file/path> > <outputfile>
   
   export LOCAL="PetroceptDc/PetroceptDc.WebApi/App_Start/WebApiConfig.cs" && git show e805ddc:"$LOCAL" > REMOTE && git show 821dc38:"$LOCAL" > BASE &&  diff3 "$LOCAL" BASE REMOTE -m | sed 's/^M$//' > OUT && vim -d -c "wincmd J" OUT "$LOCAL" BASE REMOTE -c 'set diffopt+=iwhite'
