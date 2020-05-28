@@ -18,32 +18,6 @@ TODO
 
 - tls config in k9s
 
-Try these
-
-Prime:
-  Heat (https://www.primevideo.com/detail/0MJCURS2BD9TX93N9AQL2PSL18/ref=atv_wl_hom_c_unkc_1_11)
-  
-
-Netflix:
-   Silver linings playbook (https://www.netflix.com/watch/70244164?trackId=251742617&tctx=0%2C0%2C3b41def1-0cd2-47fb-b183-892c93203200-337559824%2C%2C)
-
-   Main Meri Patni aur woh (https://www.netflix.com/watch/70042756?trackId=251742617&tctx=0%2C0%2C57ca9c38-7bf9-4b53-8b80-5e0bfbeff754-728152598%2C%2C)
-
-   Tony Robbins i am not your guru (https://www.netflix.com/watch/80102204?trackId=251742617&tctx=0%2C0%2Cd2e5653c-13cc-40d0-9ee9-f6cbb5716330-218171406%2C%2C)
-
-   Tahaan (https://www.netflix.com/watch/70171835?trackId=13752289&tctx=0%2C0%2C75dcfb6a-b6aa-49b9-891f-270d28c2fe24-81977524%2C%2C)
-
-   Django unchained (https://www.netflix.com/watch/70230640?trackId=251742617&tctx=0%2C0%2C57ca9c38-7bf9-4b53-8b80-5e0bfbeff754-728033753%2C%2C)
-
-
-Rishi, Sumit and me had a discussion on Apr 13
-- the dates of the event and the itinerary look fine
-- the intent is get maximum participation by giving sufficient time to overseas guests to prepare
-- we may need to get the list of the '96 batch students from college with Nitin's help
-- Sumit & Shaktie to invite guests and get conformation
-- Jatin to collect memories eg class pics event pics etc
-- we will discuss today (Apr 14) @ 11am
-
 
 Node-Selectors:  <none>                                                                                                                                                                                                                     │
 │Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s                                                                                                                                                                            │
