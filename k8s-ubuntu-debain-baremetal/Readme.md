@@ -152,3 +152,18 @@ run
 ```bash
 kubeadm token create --print-join-command
 ```
+
+## setup storage
+1. ref: [Kubernetes (5) Local Persistent Volumes](https://vocon-it.com/2018/12/20/kubernetes-local-persistent-volumes/)
+    ```bash
+    cat > storageClass.yaml << EOF
+    kind: StorageClass
+    apiVersion: storage.k8s.io/v1
+    metadata:
+      name: my-local-storage
+    provisioner: kubernetes.io/no-provisioner
+    volumeBindingMode: WaitForFirstConsumer
+    EOF
+
+    kubectl create -f storageClass.yaml
+    ```
