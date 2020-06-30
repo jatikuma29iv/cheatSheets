@@ -153,6 +153,25 @@ run
 kubeadm token create --print-join-command
 ```
 
+### setting node ip
+```bash
+sudo vim /sudo vim /var/lib/kubelet/config.yaml /var/lib/kubelet/kubeadm-flags.env
+
+KUBELET_KUBEADM_ARGS=--cgroup-driver=systemd --network-plugin=cni --pod-infra-container-image=k8s.gcr.io/pause:3.1 --node-ip=10.10.10.1
+
+systemctl daemon-reload && systemctl restart kubelet
+```
+ref: https://github.com/kubernetes/kubeadm/issues/203
+
+--node-ip config
+
+Add "--node-ip" to '/var/lib/kubelet/kubeadm-flags.env
+
+```bash
+cat /var/lib/kubelet/kubeadm-flags.env
+KUBELET_KUBEADM_ARGS=--cgroup-driver=systemd --network-plugin=cni --pod-infra-container-image=k8s.gcr.io/pause:3.1 --node-ip=10.10.10.1
+```
+
 ## setup storage
 1. ref: [Kubernetes (5) Local Persistent Volumes](https://vocon-it.com/2018/12/20/kubernetes-local-persistent-volumes/)
     ```bash
