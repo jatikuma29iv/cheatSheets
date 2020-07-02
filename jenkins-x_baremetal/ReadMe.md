@@ -34,12 +34,25 @@ kubectl patch svc jxing-nginx-ingress-controller -p '{"spec": {"type": "LoadBala
 run following patches to reduce the number of replicas
 ```bash
  kubectl patch deployments -n kube-system jxing-nginx-ingress-controller \
-    -p '{"spec":{"replicas":1}}'
+    -p '{"spec":{"replicas":2}}'
 
  kubectl patch deployments -n jx deck -p '{"spec":{"replicas":1}}'
 
  kubectl patch deployments -n jx hook -p '{"spec":{"replicas":1}}'
+```
 
+fix probe failed issues:
+
+```bash
+kubectl patch deploy -n kube-system jxing-nginx-ingress-controller -p '[{"op":"add",
+      "path":"/spec/template/spec/containers/0/livenessProbe/initialDelaySeconds",
+      "value":180},
+      {"op":"add","path":"/spec/template/spec/containers/0/readinessProbe/initialDelaySeconds",
+      "value":160},
+      {"op":"add","path":"/spec/template/spec/containers/0/livenessProbe/timeoutSeconds",
+      "value":10},
+      {"op":"add","path":"/spec/template/spec/containers/0/readinessProbe/timeoutSeconds",
+      "value":10}]' --type=json
 ```
 
 ## configure insecure registry
