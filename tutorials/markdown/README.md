@@ -79,3 +79,19 @@ text
 text
 #### Heading4
 ```
+
+## Adding `youtube` video link with image
+
+```
+[![VID DESC HERE](IMG_LINK_HERE)](VID_LINK)
+```
+
+### Details:
+Each YouTube video has four generated images. They are predictably formatted as follows:
+
+```
+https://img.youtube.com/vi/<insert-youtube-video-id-here>/0.jpg
+https://img.youtube.com/vi/<insert-youtube-video-id-here>/1.jpg
+https://img.youtube.com/vi/<insert-youtube-video-id-here>/2.jpg
+https://img.youtube.com/vi/<insert-youtube-video-id-here>/3.jpg
+```
