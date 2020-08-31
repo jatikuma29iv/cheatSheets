@@ -3,6 +3,8 @@
 Job of a `data scientist/analyst` is to find the best `algorithm` for a given problem
 and make sure that the data when `modeled` is consumable by the `algorithm`.
 
+
+
 ## Projects
 
 [![Using Machine Learning to Replicate Airbnb's Amenity Detection Part 1: Overview](https://img.youtube.com/vi/C_lIenSJb3c/0.jpg)](https://youtu.be/C_lIenSJb3c)
