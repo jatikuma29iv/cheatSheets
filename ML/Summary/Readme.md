@@ -1,5 +1,14 @@
 # Summary
 
+## Deep Learing
+
+  DL is all about _matrix multiplication_
+
+  ### activation funtion
+  - inputs
+  - weights
+  - bias
+  
 ## Lifecycle of a DS project
 
 - exploratory data analysis
