@@ -3,7 +3,32 @@
 Job of a `data scientist/analyst` is to find the best `algorithm` for a given problem
 and make sure that the data when `modeled` is consumable by the `algorithm`.
 
+## Roadmap
 
+  ### Statistics and Maths
+
+  - differential equations
+  - linear algebra
+  - matrix multiplications
+  - scalars
+  - vector
+  - matrix
+  - probability
+
+### Skills
+1. Prog Lang: Python or R
+2. Stats & Maths: differential equations, linear algebra, matrix multiplication, vector, matrices, scalas, probability
+3. dbms: sql, no sql: mongodb, cassandra, dynamodb (aws)
+4. ml & dl: advanced dl (object detection, euler algo, kinds of transfer learnings), libraries related to dl: tensorflow, keras, pytorch
+5. big data: basic arch. for hadoop (small proj), pig, hive, flumes
+6. nlp: chatbots, sentiment analysis - political, stock market via news; nlu - conversational ai chatbots
+7. git: bitbucket, git cli
+8. reporting tools: power bi, tableau, qlicksense
+9. deployment techniques: azure, aws, cloud frontry, heroku (platform as a service) paas vs iaas, differences b/w them, adv, disadv
+10. cloud computing services: azure, aws - kinesis stream, s3 bucket
+11. devops: kubernetes, docker
+
+ref: [https://www.youtube.com/watch?v=8Q5F_AQ9OGo](https://www.youtube.com/watch?v=8Q5F_AQ9OGo)
 
 ## Projects
 
