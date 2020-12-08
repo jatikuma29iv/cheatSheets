@@ -36,7 +36,8 @@ sudo add-apt-repository \
 
 # install docker
 sudo apt-get update
-sudo apt-get install -y docker-ce=5:18.09.9~3-0~debian-$(lsb_release -cs) docker-ce-cli=5:18.09.9~3-0~debian-$(lsb_release -cs) containerd.io
+sudo apt-get install -y docker-ce=5:18.09.9~3-0~debian-$(lsb_release -cs) \
+  docker-ce-cli=5:18.09.9~3-0~debian-$(lsb_release -cs) containerd.io
 ```
 
 ### Ubuntu
