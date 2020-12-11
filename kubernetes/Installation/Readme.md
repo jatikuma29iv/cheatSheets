@@ -1,5 +1,3 @@
-# cheatsheet
-
 # Installation
 
 ## config sample
