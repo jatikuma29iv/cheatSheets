@@ -17,3 +17,9 @@
 | **build Automation** | Jenkins, powershell deployment scripts |
 | **code Automation** | integration layer (Api, soap, MsSQL, MySQL |
 
+## Frameworks
+| x | x|
+|--|--|
+|dotnet |Autofac, AutoMapper, CommonServiceLocator, EntityFramework, **Newtonsoft.Json**, jq, RestShap, **Swagger**, MVC, Identity,  IdentityModel.Token.Jwt, **Owin**, **WebApi2**, **SignalR**, **adal.net**, **ApplicationInsights**,NPOI |
+|angular | bootstrap, JQuery, Angular Material, Kendo UI , adal.js, oicd-client, oauth2-oidc |
+|mobile |xamarin, ionic |
