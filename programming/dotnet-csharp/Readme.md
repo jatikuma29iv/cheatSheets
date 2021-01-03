@@ -10,13 +10,13 @@ x
 
 * How to instantiabe new Dictionary
 
- Dictionary <TKey,TValue> contains a collection of key/value pairs.Its Add method takes two parameters, one for the key and one for the value
+`Dictionary <TKey,TValue>` contains a collection of `key/value` pairs.Its Add method takes two parameters, one for the key and one for the value
 
 ```csharp
 
 // sample here
 
-	**Syntax**
+**Syntax**
 	
 class classname
 {
@@ -24,11 +24,10 @@ class classname
 }
 
 class call{
-		 Dictionary<int, classname> names = new Dictionary<int,Name>()
-			{
-					{01,classname{variable="value"}},
-					
-				};
+	 Dictionary<int, classname> names = new Dictionary<int,Name>()
+	{
+		{01,classname{variable="value"}},
+	};
 }	
 
 ```
@@ -38,8 +37,8 @@ class call{
 ```csharp
 // say dictionary object is Obj
 
-	// to get object from sources
-	var o = Obj[ str ];
+// to get object from sources
+var o = Obj[ str ];
 
 ```
 
@@ -56,13 +55,12 @@ In addition to the operations inherited from Collection, the List interface incl
 	*Positional access
 
 ```csharp
-
 // sample here
 
 ArrayList<String> list = new ArrayList<String>() {{
-    add("item1");
-    add("item2");
-    add("item3");
+	add("item1");
+	add("item2");
+	add("item3");
 }}
 
 ```
@@ -72,11 +70,10 @@ ArrayList<String> list = new ArrayList<String>() {{
 ```csharp
 // say dictionary object is Obj
 
-	// to get object from sources
-	var o = Obj[ i ];
+// to get object from sources
+var o = Obj[ i ];
 
 ```
-
 
 ### NewtonSoft Json
 
@@ -84,19 +81,16 @@ ArrayList<String> list = new ArrayList<String>() {{
 Object initializers let you assign values to any accessible fields or properties of an object at creation time without having to invoke a constructor followed by lines of assignment statements.
 
 ```csharp
-
 // sample here
  
-		class Name
+	class Name
 {
     // Auto-implemented properties.
     public int fName { get; set; }
     public string lName { get; set; }
 }
 
-
-		Name name = new name {fName = "abc", lName = "xyz" };
-
+Name name = new name {fName = "abc", lName = "xyz" };
 ```
 * How to instantiabe new JArray
 
@@ -105,7 +99,7 @@ Object initializers let you assign values to any accessible fields or properties
 // sample here
 using Newtonsoft.Json.Linq.JArray
 
-	 var a = JArray.Parse(json);
+ var a = JArray.Parse(json);
 
 ```
 
@@ -114,9 +108,8 @@ using Newtonsoft.Json.Linq.JArray
 ```csharp
 // say dictionary object is Obj
 
-	 var s = i["source"].ToString();
+ var s = i["source"].ToString();
 
-		
 ```
 
 
@@ -125,8 +118,8 @@ using Newtonsoft.Json.Linq.JArray
 ```csharp
 // say dictionary object is Obj
 
-	string phrase = "The quick brown.";
-	string[] words = phrase.Split(' ');
+string phrase = "The quick brown.";
+string[] words = phrase.Split(' ');
 
 ```
 
@@ -138,27 +131,23 @@ using Newtonsoft.Json.Linq.JArray
 ```csharp
 
 // sample here
- foreach (var i in a)
-            {
-                // extract the source name
-               
+foreach (var i in a)
+{
+		// extract the source name
+		
+		// check if bucket of above sourcename exist
+		if ()
+		{
+				// the bucket exists
+				// get existing bucket
+		}
+		else
+		{
+				// the bucket do not exist
+				// create bucket
 
-                // check if bucket of above sourcename exist
-                if ()
-                {
-                    // the bucket exists
-                    // get existing bucket
-             
-                     
-                }
-                else
-                {
-                    // the bucket do not exist
-                    // create bucket
-                    
-                     result.Sources.Add(s, b);
-                   
-                }
-
+				 result.Sources.Add(s, b);
+		}
+}
 
 ```
