@@ -1,8 +1,6 @@
-# dot Net Programing
+# Unit test cases
 
-## Unit test cases
-
-### Method Run order
+## Method Run order
 
 The order that methods will be run is:
 
@@ -31,7 +29,7 @@ public void pushing_an_item_onto_an_empty_stack_increments_count()
 
 ```
 
-### Syntax for UnitTest Case
+## Syntax for UnitTest Case
 
 ```csharp
 using System;
@@ -89,7 +87,7 @@ Go to solution explorer (On right most window)
 
 3.Under New project -->New test Project  
 
-## After that we should add reference 
+### After that we should add reference 
 
 Go to solution explorer (On right most window)
 
@@ -101,7 +99,7 @@ Go to solution explorer (On right most window)
 
 4.New window opens Put check mark to class Library project and click ok 
 
-### How to Run Test Cases
+## How to Run Test Cases
 
 1.In MS VisualStudio toolbar -->Click on test-->window-->Test Expolrer
 
@@ -109,9 +107,9 @@ Go to solution explorer (On right most window)
 
 3.Click Run or Run all to (Run the test cases)
 
-#### Testing data for Valid scenarios is Positive testing.
+### Testing data for Valid scenarios is Positive testing.
 
-#### Testing data for InValid scenarios is Negative testing.
+### Testing data for InValid scenarios is Negative testing.
 
 ```csharp
 using System;
