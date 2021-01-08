@@ -13,6 +13,18 @@ $ npx create-react-app spa
 $ npm install node-sass@4.9 --save
 ```
 
+## coding
+Difference in following function assignments:
+```javascript
+<Component onClick={ onMyClick } />
+// On click of component will call onMyClick(). Assigning def to onClick
+
+<Component onClick={ ()=> onMyClick() } />
+// Here we have created a anonymous fun and assigned
+
+<Component newProp={ myFunc() } />
+// At the time of component creation, myFunc() will be executed and it
+```
 ## api url
 
 Note: _Env variables should start with REACT_APP_ otherwise NODE_ENV variables are a bit confused and your environment variable will not work:_
