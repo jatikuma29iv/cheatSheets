@@ -40,3 +40,13 @@ $ ASPNETCORE_Kestrel__Certificates__Default__Password="<cryptic-password>" \
 | http://localhost:5000 / https://localhost:5001 <br/>[5 ways to set the URLs for an ASP.NET Core app](https://andrewlock.net/5-ways-to-set-the-urls-for-an-aspnetcore-app/) | |
 |-|-|
 | - | - |
+
+## Jobs/Messages
+
+### Hangfire
+
+[Schedule Background Jobs Using Hangfire in .NET Core](https://codeburst.io/schedule-background-jobs-using-hangfire-in-net-core-2d98eb64b196)
+
+[Schedule Background Jobs Using Hangfire In ASP.NET Core](https://www.c-sharpcorner.com/article/schedule-background-jobs-using-hangfire-in-asp-net-core/#:~:text=Hangfire%20offers%20integrated%20web%20monitoring,for%20the%20required%20database%20schema.)
+
+
