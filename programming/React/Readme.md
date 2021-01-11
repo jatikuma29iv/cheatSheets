@@ -13,6 +13,16 @@ $ npx create-react-app spa
 $ npm install node-sass@4.9 --save
 ```
 
+## Ref
+
+[11 React Boilerplates and Starter Kits for 2019](https://blog.bitsrc.io/11-react-application-boilerplates-for-2019-b49a8226ea54)
+
+[Axios Crash Course | HTTP Library](Axios Crash Course | HTTP Library)
+
+https://www.udemy.com/course/modern-react-front-to-back/
+
+[React Redux Universal Hot Example](https://github.com/erikras/react-redux-universal-hot-example)
+
 ## coding
 Difference in following function assignments:
 ```javascript
