@@ -6,6 +6,8 @@
 
 [How to Do 90% of What Plugins Do (With Just Vim)](https://youtu.be/XA2WjJbmmoM)
 
+[Vim Taglist, Ctags, TTags Command Line IDE](https://www.youtube.com/watch?v=ewT015uTBm8)
+
 ## ref
 
 [Configure iTerm2 and Vim like a Pro](https://medium.com/@jeantimex/how-to-configure-iterm2-and-vim-like-a-pro-on-macos-e303d25d5b5c)
