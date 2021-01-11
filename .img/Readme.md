@@ -1,6 +1,11 @@
+# .img
 
-![yt_iicon_rbg.png]
+1) ![](./yt_icon.png)
+
+2) ![](https://github.com/jatikuma29iv/cheatSheets/blob/master/.img/yt_icon.png)
 
 ```md
-![yt_iicon_rbg.png]
+1) ![](./yt_icon.png)
+
+2) ![](https://github.com/jatikuma29iv/cheatSheets/blob/master/.img/yt_icon.png)
 ```
