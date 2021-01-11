@@ -1,16 +1,18 @@
 # REST spec
 
+# Spec
+
 In 2008, Leonard Richardson [introduced a maturity model](https://www.crummy.com/writing/speaking/2008-QCon/act3.html) for web services, based on the three primary technologies in the web stack:
 
 -   URI
 -   HTTP
 -   Hypermedia
 
-## URI
+### URI
 
 URI's are defined by [RFC 3986](https://tools.ietf.org/html/rfc3986).
 
-## HTTP
+### HTTP
 
 HTTP is currently defined by
 
@@ -21,7 +23,7 @@ HTTP is currently defined by
 -   [RFC 7234](https://tools.ietf.org/html/rfc7234) -- Caching
 -   [RFC 7235](https://tools.ietf.org/html/rfc7235) -- Authentication
 
-## Hypermedia
+### Hypermedia
 
 This is the hard one. The ubiquitous hypermedia media type is still HTML, you could start with [HTML 5.2](https://www.w3.org/TR/html52/).
 
@@ -33,3 +35,10 @@ A number of API try to use [JSON](https://tools.ietf.org/html/rfc8259), but JSON
 -   [HAL](http://stateless.co/hal_specification.html)
 -   [Collection+JSON](http://amundsen.com/media-types/collection/)
 -   [SIREN](https://github.com/kevinswiber/siren)
+
+# Ref
+
+https://restcookbook.com/
+
+https://www.restapitutorial.com/
+
