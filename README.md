@@ -18,3 +18,12 @@
 2. CPU-boud should use sub-thred insted of IO-boud task
 
 [ref](https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async/Tip-2-Distinguish-CPU-Bound-work-from-IO-bound-work)
+
+## Hosting
+
+| | |
+|:-|:-|
+| [Netlify](https://www.netlify.com/pricing/) | Free to get started | 
+
+## Hosting
+
