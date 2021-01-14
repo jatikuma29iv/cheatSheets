@@ -36,6 +36,10 @@ A number of API try to use [JSON](https://tools.ietf.org/html/rfc8259), but JSON
 -   [Collection+JSON](http://amundsen.com/media-types/collection/)
 -   [SIREN](https://github.com/kevinswiber/siren)
 
+## Books
+
+![](img/RESTfulWebAPIs.png) [read](http://sd.blackball.lv/library/RESTful_Web_APIs_(2013).pdf)
+
 # Ref
 
 https://restcookbook.com/
