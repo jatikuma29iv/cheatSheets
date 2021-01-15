@@ -37,3 +37,11 @@
   - [https://alexpearce.me/2014/05/italics-in-iterm2-vim-tmux/](https://alexpearce.me/2014/05/italics-in-iterm2-vim-tmux/)
 - css
   - https://github.com/mattn/emmet-vim
+
+## Troubleshooting
+
+### Omnisharp
+
+https://github.com/OmniSharp/omnisharp-vim/issues/440
+
+~/.cache/omnisharp-vim/omnisharp-roslyn/run -vs </path/of/proj.csproj>
