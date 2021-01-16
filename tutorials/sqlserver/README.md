@@ -120,3 +120,18 @@ GO
 ### installing sql*plus in mac
 https://tomeuwork.wordpress.com/2014/05/12/how-to-install-oracle-sqlplus-and-oracle-client-in-mac-os/
 ```
+
+## Installations
+
+### MsSql Server Client
+
+#### Mac Osx High Sierra
+
+sqlcmd
+
+```bash
+brew untap microsoft mssql-preview
+brew tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release
+brew update
+brew install mssql-tools
+```
