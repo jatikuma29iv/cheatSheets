@@ -1,3 +1,16 @@
+# Refs
+
+**AZURE**
+- [Develop and deploy a containerized Node.js app with Visual Studio Code and Azure](https://docs.microsoft.com/en-us/azure/developer/javascript/how-to/develop-nodejs-on-azure)
+  * Deploying Docker app on `Azure App Service`
+  * [Hosting a private Docker registry](https://docs.microsoft.com/en-us/azure/developer/javascript/how-to/develop-nodejs-on-azure#hosting-a-private-docker-registry)
+  * [Configuring a custom domain name](https://docs.microsoft.com/en-us/azure/developer/javascript/how-to/develop-nodejs-on-azure#configuring-a-custom-domain-name)
+  * [Scaling up and out](https://docs.microsoft.com/en-us/azure/developer/javascript/how-to/develop-nodejs-on-azure#scaling-up-and-out)
+
+**Node js**
+ * [Debugging Node.js with Chrome DevTools](https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27)
+ * [Node js debugging Guide](https://nodejs.org/en/docs/guides/debugging-getting-started/)
+
 # Development Process
 
 <!-- vim-markdown-toc GFM -->
