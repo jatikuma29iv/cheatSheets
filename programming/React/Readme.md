@@ -23,6 +23,8 @@ https://www.udemy.com/course/modern-react-front-to-back/
 
 [React Redux Universal Hot Example](https://github.com/erikras/react-redux-universal-hot-example)
 
+[Adding Custom Environment Variables .env](https://create-react-app.dev/docs/adding-custom-environment-variables/)
+
 ## coding
 Difference in following function assignments:
 ```javascript
