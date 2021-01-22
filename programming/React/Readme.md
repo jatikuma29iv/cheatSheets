@@ -25,6 +25,8 @@ https://www.udemy.com/course/modern-react-front-to-back/
 
 [Adding Custom Environment Variables .env](https://create-react-app.dev/docs/adding-custom-environment-variables/)
 
+[Guest Post: How to Set up and Deploy a Node.js/Express Application for Production](https://deploybot.com/blog/guest-post-how-to-set-up-and-deploy-nodejs-express-application-for-production)
+
 ## coding
 Difference in following function assignments:
 ```javascript
