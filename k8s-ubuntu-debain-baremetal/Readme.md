@@ -42,30 +42,105 @@ sudo apt-get install -y docker-ce=5:18.09.9~3-0~debian-$(lsb_release -cs) \
 
 ### Ubuntu
 ref: [Container runtimes#Docker](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#docker)
+ref: [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+
+#### Uninstall old version
 ```bash
-# (Install Docker CE)
-## Set up the repository:
-### Install packages to allow apt to use a repository over HTTPS
-sudo apt-get update && sudo apt-get install -y \
-  apt-transport-https ca-certificates curl software-properties-common gnupg2
-
-# Add Docker’s official GPG key:
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-# Add the Docker apt repository:
-sudo add-apt-repository \
-  "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) \
-  stable"
-
-# Install Docker CE
-sudo apt-get update && sudo apt-get install -y \
-  containerd.io \
-  docker-ce=5:18.09.9~3-0~ubuntu-$(lsb_release -cs) \
-  docker-ce-cli=5:18.09.9~3-0~ubuntu-$(lsb_release -cs)
+ sudo apt-get remove docker docker-engine docker.io containerd runc
+```
+#### Update Repo
+1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+```bash
+ sudo apt-get update
+ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+```
+2. Add Docker’s official GPG key:
+```bash
+ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 
-# Set up the Docker daemon
+3. add stable repo
+```bash
+ echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+#### Install docker
+```bash
+ sudo apt-get update
+ sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+#### Manage docker as non root
+1. Create the docker group.
+```bash
+ sudo groupadd docker
+```
+
+2. Add your user to the docker group.
+```bash
+ sudo usermod -aG docker $USER
+```
+
+3. Log out and log back in so that your group membership is re-evaluated.
+
+On Linux, you can also run the following command to activate the changes to groups:
+```bash
+ newgrp docker 
+```
+
+4. Verify that you can run docker commands without sudo.
+```bash
+ docker info
+```
+
+If you initially ran Docker CLI commands using sudo before adding your user to the docker group, you may see the following error, which indicates that your ~/.docker/ directory was created with incorrect permissions due to the sudo commands.
+
+```bash
+WARNING: Error loading config file: /home/user/.docker/config.json -
+stat /home/user/.docker/config.json: permission denied
+```
+
+To fix this problem, either remove the ~/.docker/ directory (it is recreated automatically, but any custom settings are lost), or change its ownership and permissions using the following commands:
+```bash
+ sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+ sudo chmod g+rwx "$HOME/.docker" -R
+```
+
+#### Configure Docker to start on boot
+```bash
+ sudo systemctl enable docker.service
+ sudo systemctl enable containerd.service
+```
+
+To disable this behavior, use disable instead.
+```bash
+ sudo systemctl disable docker.service
+ sudo systemctl disable containerd.service
+```
+
+#### install `docker-compose`
+```bash
+ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+```bash
+ sudo chmod +x /usr/local/bin/docker-compose
+```
+
+Test the installation.
+```bash
+ docker-compose --version
+ docker-compose version 1.29.2, build 5becea4c
+```
+
+#### Set up the Docker daemon
 ```bash
 cat <<EOF | sudo tee /etc/docker/daemon.json
 {
@@ -80,10 +155,6 @@ EOF
 
 sudo mkdir -p /etc/systemd/system/docker.service.d
 
-# Restart Docker
-sudo systemctl daemon-reload
-sudo systemctl restart docker
-```
 
 ## install k8s
 ref: [Steps to Install Kubernetes on Ubuntu](https://phoenixnap.com/kb/install-kubernetes-on-ubuntu)
