@@ -103,3 +103,35 @@ My favourite ML/AI resources - https://bit.ly/AIMLresources
 ## Courses
 
 - [AI For Everyone](https://www.coursera.org/learn/ai-for-everyone) (free)
+
+
+## 🚀 𝗠𝗮𝘀𝘁𝗲𝗿𝗶𝗻𝗴 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗔𝗹𝗴𝗼𝗿𝗶𝘁𝗵𝗺𝘀 – 𝗠𝗮𝗱𝗲 𝗦𝗶𝗺𝗽𝗹𝗲! 🚀
+
+Feeling overwhelmed by the countless algorithms in Machine Learning?
+You’re not alone.
+
+Here’s a powerful cheatsheet that breaks down 20+ popular ML algorithms at a glance:
+
+📚 𝗧𝘆𝗽𝗲: Supervised, Unsupervised, Dimensionality Reduction
+
+🎯 𝗕𝗲𝘀𝘁 𝗨𝘀𝗲 𝗖𝗮𝘀𝗲𝘀: From predicting house prices to fraud detection
+
+🧠 𝗖𝗼𝗿𝗲 𝗟𝗼𝗴𝗶𝗰 & 𝗔𝘀𝘀𝘂𝗺𝗽𝘁𝗶𝗼𝗻𝘀: Understand how and why they work
+
+✅ 𝗣𝗿𝗼𝘀 & ❌ 𝗖𝗼𝗻𝘀: When to use, and when to avoid
+
+🌍 𝗥𝗲𝗮𝗹-𝗪𝗼𝗿𝗹𝗱 𝗘𝘅𝗮𝗺𝗽𝗹𝗲𝘀: Connect theory to real applications
+
+𝗔 𝗳𝗲𝘄 𝗵𝗶𝗴𝗵𝗹𝗶𝗴𝗵𝘁𝘀:
+
+🔹 𝗟𝗶𝗻𝗲𝗮𝗿 𝗥𝗲𝗴𝗿𝗲𝘀𝘀𝗶𝗼𝗻 – Perfect for predicting continuous values like house prices.
+
+🔹 𝗥𝗮𝗻𝗱𝗼𝗺 𝗙𝗼𝗿𝗲𝘀𝘁 – High accuracy and robustness, ideal for complex classification tasks.
+
+🔹 𝗡𝗲𝘂𝗿𝗮𝗹 𝗡𝗲𝘁𝘄𝗼𝗿𝗸𝘀 – The powerhouse behind image and voice recognition systems.
+
+🔹 𝗞-𝗠𝗲𝗮𝗻𝘀 𝗖𝗹𝘂𝘀𝘁𝗲𝗿𝗶𝗻𝗴 – A go-to method for customer segmentation.
+
+💡 Whether you're a beginner or an experienced practitioner, keeping these insights at your fingertips will sharpen your model selection skills — and save you hours of confusion.
+
+![ml-algorithms](ml-algorithms.jpeg]
