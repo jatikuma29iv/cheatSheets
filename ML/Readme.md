@@ -134,4 +134,4 @@ Here’s a powerful cheatsheet that breaks down 20+ popular ML algorithms at a g
 
 💡 Whether you're a beginner or an experienced practitioner, keeping these insights at your fingertips will sharpen your model selection skills — and save you hours of confusion.
 
-![ml-algorithms](ml-algorithms.jpeg]
+![ml-algorithms](ml-algorithms.jpeg)
